@@ -18,6 +18,8 @@ The goal of this **open‑source project** is to provide a **simple, determinist
 * AI systems
 * automation pipelines
 
+CV data is inherently heterogeneous—often incomplete, inconsistently structured, and partially normalized. The Barba-CV schema therefore enforces deterministic structure while preserving semantic flexibility, allowing real-world CV data to be represented without unrealistic constraints.
+
 ---
 
 # 🔮 Vision
