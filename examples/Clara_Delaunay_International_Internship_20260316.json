@@ -1,0 +1,243 @@
+{
+  "barba_cv_version": "1.2",
+  "personal_info": {
+    "first_name": "Clara",
+    "middle_name": "",
+    "last_name": "Delaunay",
+    "date_of_birth": "",
+    "driving_licenses": [
+      "Permis de conduire – depuis 2021"
+    ],
+    "address": {
+      "street": "14 rue des Tilleuls",
+      "postal_code": "34000",
+      "city": "Montpellier",
+      "country": "France"
+    },
+    "contact": {
+      "email": "clara.delaunay@example.org",
+      "phone": "+33 6 41 27 58 19"
+    },
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/clara-delaunay",
+      "github": "",
+      "website": "",
+      "twitter": "",
+      "other_socials": []
+    }
+  },
+  "profile_summary": "Étudiante en troisème année à Sciences Po Lille, et actuellement en échange à l’Université Européenne de la Baltique, je recherche un stage de 4 à 6 mois à l’international dans le cadre de mon bachelor. Polyvalente, rigoureuse, disponible et discrète, je souhaite contribuer aux travaux de la chancellerie politique de l’Ambassade de France à Berlin.",
+  "position_sought": [
+    "International Internship",
+    "Public Affairs | Law | European Studies"
+  ],
+  "experiences": [
+    {
+      "organization": "Cabinet Moreau & Associés, conseil en droit du sport",
+      "role_title": "STAGIAIRE",
+      "location": {
+        "city": "PARIS",
+        "country": "FRANCE"
+      },
+      "start_date": "Juin 2019",
+      "end_date": "Juin 2020",
+      "website": "",
+      "logo": "",
+      "tasks": [
+        "Observation des activités juridiques liées à la gestion d’affaires sportives",
+        "Découverte du fonctionnement interne d’un cabinet d’avocats : gestion de dossiers, veille juridique",
+        "Première approche du raisonnement juridique appliqué au monde sportif"
+      ],
+      "achievements": []
+    },
+    {
+      "organization": "Cour administrative régionale de l’Ouest",
+      "role_title": "ASSISTANTE JURIDIQUE",
+      "location": {
+        "city": "DOUAI",
+        "country": "FRANCE"
+      },
+      "start_date": "Mai 2023",
+      "end_date": "Juin 2023",
+      "website": "",
+      "logo": "",
+      "tasks": [
+        "Observation et analyse des dossiers traités par les juges",
+        "Découverte du fonctionnement judiciaire et des procédures administratives",
+        "Rédaction juridique des procès"
+      ],
+      "achievements": []
+    },
+    {
+      "organization": "Institution parlementaire (commission d’évaluation et de contrôle)",
+      "role_title": "STAGIAIRE",
+      "location": {
+        "city": "PARIS",
+        "country": "FRANCE"
+      },
+      "start_date": "Mai 2024",
+      "end_date": "Juin 2024",
+      "website": "",
+      "logo": "",
+      "tasks": [
+        "Participation à la rédaction d’un rapport parlementaire",
+        "Présence active lors des réunions de commission, prise de notes et rédaction de comptes rendus",
+        "Travail en autonomie dans un cadre institutionnel exigeant, respect de la confidentialité des travaux parlementaires"
+      ],
+      "achievements": []
+    },
+    {
+      "organization": "Fédération nationale d’escrime",
+      "role_title": "SPORTIVE DE HAUT-NIVEAU",
+      "location": {
+        "city": "",
+        "country": ""
+      },
+      "start_date": "2019",
+      "end_date": "2025",
+      "website": "",
+      "logo": "",
+      "tasks": [
+        "Equipe de Lituanie depuis Septembre 2024 - Equipe de France de 2019-2024",
+        "Participation en Coupe du monde, championnats d’Europe et Championnat du Monde",
+        "Préparation physique et mentale intensive, gestion du double projet sport/études",
+        "Objectif sportif: Qualification pour les Jeux olympiques"
+      ],
+      "achievements": []
+    }
+  ],
+  "education": [
+    {
+      "school": "Institut Atlantique des Études Publiques",
+      "degree": "",
+      "field": "",
+      "start_date": "2022",
+      "end_date": "aujourd’hui",
+      "website": "",
+      "logo": "",
+      "school_location": {
+        "city": "",
+        "country": ""
+      }
+    },
+    {
+      "school": "Cycle préparatoire Horizon Public",
+      "degree": "",
+      "field": "",
+      "start_date": "2020",
+      "end_date": "2022",
+      "website": "",
+      "logo": "",
+      "school_location": {
+        "city": "",
+        "country": ""
+      }
+    },
+    {
+      "school": "Lycée Louise Michel, Tours",
+      "degree": "Baccalauréat général, mention Très Bien",
+      "field": "Spécialités: Anglais contemporain, Histoire-Géopolitique, Sciences Economiques et sociales",
+      "start_date": "2021",
+      "end_date": "2022",
+      "website": "",
+      "logo": "",
+      "school_location": {
+        "city": "",
+        "country": ""
+      }
+    }
+  ],
+  "skills": {
+    "it_skills": [
+      "PackOffice(Word",
+      "Excel",
+      "PowerPoint)",
+      "Outils de communication visuelle (Canva",
+      "Cap Cut",
+      "Tik Tok)",
+      "Conception de contenu promotionnel sportif ( publicité pour la flamme olympique 2024)",
+      "Formation MOOC : Introduction à l’intelligence artificielle (2023)"
+    ],
+    "hard_skills": [],
+    "soft_skills": [
+      "Polyvalente",
+      "rigoureuse",
+      "disponible",
+      "discrète"
+    ]
+  },
+  "certifications": [
+    {
+      "name": "Formation MOOC : Introduction à l’intelligence artificielle",
+      "issuer": "",
+      "date_obtained": "2023",
+      "expiry_date": "",
+      "credential_id": "",
+      "credential_url": ""
+    }
+  ],
+  "languages": [
+    {
+      "language": "Français",
+      "level": "langue maternelle",
+      "certificates": []
+    },
+    {
+      "language": "Lituanien",
+      "level": "langue maternelle",
+      "certificates": []
+    },
+    {
+      "language": "Anglais",
+      "level": "C1–courant, professionnel",
+      "certificates": []
+    },
+    {
+      "language": "Allemand",
+      "level": "B2-autonome, opérationnel",
+      "certificates": []
+    },
+    {
+      "language": "Russe",
+      "level": "B1–usuel, actif",
+      "certificates": []
+    }
+  ],
+  "interests": [],
+  "project_achievements": [
+    {
+      "id": "",
+      "service_type": "",
+      "client": "",
+      "title": "",
+      "period": {
+        "end": "",
+        "start": ""
+      },
+      "role": [],
+      "sectors": [],
+      "competencies": [],
+      "keywords": [],
+      "synonyms": {},
+      "description": ""
+    }
+  ],
+  "meta": {
+    "cv_uuid": "2bf75d7b-aaac-429e-b8b6-a4480643a904",
+    "cv_title": "Clara_Delaunay_International_Internship_20260316",
+    "parsing_errors": [
+      "Unmapped: 'Échange universitaire à Vilnius-2025' — no matching field"
+    ],
+    "ats_processed": true,
+    "processor_engine": "barba_cv_engine_1.2_example",
+    "parsed_at": "2026-03-16",
+    "source_original_text": "",
+    "source_ats_revised_text": "",
+    "original_filename": "Clara_Delaunay_International_Internship_20260316.json",
+    "source_format": "json",
+    "ingested_at": "2026-03-16",
+    "embedded_at": "",
+    "extraction_confidence_overall": 0.9
+  },
+  "extensions": {}
+}
