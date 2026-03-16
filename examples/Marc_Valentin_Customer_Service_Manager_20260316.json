@@ -1,0 +1,238 @@
+{
+  "barba_cv_version": "1.2",
+  "personal_info": {
+    "first_name": "Marc",
+    "middle_name": "",
+    "last_name": "Valentin",
+    "date_of_birth": "",
+    "driving_licenses": [
+      "permis B"
+    ],
+    "address": {
+      "street": "5 rue des Erables",
+      "postal_code": "92130",
+      "city": "Issy-les-Moulineaux",
+      "country": "France"
+    },
+    "contact": {
+      "email": "marc.valentin@example.org",
+      "phone": "+33 6 73 28 15 64"
+    },
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/marc-valentin-service-client",
+      "github": "",
+      "website": "https://www.marc-valentin.example.org",
+      "twitter": "",
+      "other_socials": []
+    }
+  },
+  "profile_summary": "RESPONSABLE SERVICE CLIENT\nRigueur, esprit d’analyse et\nforte capacité d’adaptation\nMobilité : Ile de France\nmarié",
+  "position_sought": [
+    "Customer Service Manager",
+    "Digital Operations | Web Project Coordination"
+  ],
+  "experiences": [
+    {
+      "organization": "Centre de soins Saint-Martin",
+      "role_title": "Responsable relation clients - Chef de projet WEB",
+      "location": {
+        "city": "Sarcelles",
+        "country": ""
+      },
+      "start_date": "2017",
+      "end_date": "2020",
+      "website": "https://www.centre-saint-martin.example.org",
+      "logo": "",
+      "tasks": [
+        "Création – Référencement de site web (SEO)",
+        "Formateur Chargé de support applicatif",
+        "Manager service client Offshore"
+      ],
+      "achievements": []
+    },
+    {
+      "organization": "Groupe Horizon Services",
+      "role_title": "Responsable qualité relation clients - Formateur",
+      "location": {
+        "city": "Saint Denis",
+        "country": ""
+      },
+      "start_date": "2015",
+      "end_date": "2017",
+      "website": "",
+      "logo": "",
+      "tasks": [
+        "Audit CRC (25 TC, 1 superviseur, 3 chefs de groupe, 1 resp. CRC pour 140 opérations clients)",
+        "Mise en place des outils opérationnels => Diminut° de la durée de traitement par 4",
+        "Amélioration de procédure de suivi et contrôle qualité => Diminut° du tx de réclamation par 3",
+        "Recruteur - Formateur et gestion site Saint Denis et site Offshore (Moldavie et Tunisie)"
+      ],
+      "achievements": []
+    },
+    {
+      "organization": "Nova Hospitality Services",
+      "role_title": "Superviseur Service Clients Cadeaux / Chef de projet DIVALTO Solution dématérialisée",
+      "location": {
+        "city": "",
+        "country": ""
+      },
+      "start_date": "2006",
+      "end_date": "2012",
+      "website": "",
+      "logo": "",
+      "tasks": [
+        "2 équipes (3 pers et 10pers) : Recrutement, Formation, management, planification",
+        "Mise en place des outils de mesure de qualité et de performance",
+        "Amélioration des procédures de gestion service clients => CA de 9MM à 23MM en 2ans",
+        "Rédaction spécificités fonctionnelles => Loi 2010 Gestion remboursement solde Carte Cadeaux"
+      ],
+      "achievements": []
+    },
+    {
+      "organization": "TalentBridge Interim",
+      "role_title": "Gestionnaire ADV - SAV - Formateur à distance – Hotliner",
+      "location": {
+        "city": "Paris",
+        "country": ""
+      },
+      "start_date": "2002",
+      "end_date": "2006",
+      "website": "",
+      "logo": "",
+      "tasks": [
+        "Gestion traitement des tickets entrants en centre d’appel (Orange France)",
+        "Technicien support applicatif: accompagnement utilisateurs, dépannage et formation à distance (Crédit du Nord)"
+      ],
+      "achievements": []
+    },
+    {
+      "organization": "Studio Numérique Atlantique",
+      "role_title": "Gérant Entreprise– Webmaster",
+      "location": {
+        "city": "Paris",
+        "country": ""
+      },
+      "start_date": "1998",
+      "end_date": "2002",
+      "website": "",
+      "logo": "",
+      "tasks": [
+        "Démarchage commercial - Analyse des besoins- Rédaction des spécifications fonctionnelles",
+        "Création de site Web (www.francearcherie.com / www.ingelec.net )",
+        "Composition - arrangements : illustration sonore (Comité d’entreprise RATP)"
+      ],
+      "achievements": []
+    }
+  ],
+  "education": [
+    {
+      "school": "",
+      "degree": "Webmarketing / SEO / Acquisition de trafic /Tunnel de conversion",
+      "field": "",
+      "start_date": "2012",
+      "end_date": "2012",
+      "website": "",
+      "logo": "",
+      "school_location": {
+        "city": "E-Learning",
+        "country": ""
+      }
+    },
+    {
+      "school": "Académie Hospitality Plus",
+      "degree": "Management équipe Service Clients",
+      "field": "",
+      "start_date": "2010",
+      "end_date": "2010",
+      "website": "",
+      "logo": "",
+      "school_location": {
+        "city": "Evry",
+        "country": ""
+      }
+    }
+  ],
+  "skills": {
+    "hard_skills": [],
+    "soft_skills": [
+      "Pilotage des activités par les indicateurs de qualité et de performance.",
+      "Veille à l’amélioration continue de la qualité de service : actions correctives, mise en place de nouveaux outils",
+      "Mise en place et suivi du reporting KPI d’activité clients",
+      "Management d’équipe (France et sites Offshore), recrutement, formation, évaluation, débriefing, animation, planification.",
+      "Rédaction du cahier des charges fonctionnelles",
+      "Optimisation des process avec mise en place des procédures.",
+      "Réalisation de la mise en production",
+      "Accompagnement des utilisateurs (rédaction de la documentation, animation des formations…)",
+      "Création de sites, référencement SEO, budget crawl, netlinking, growth hacking."
+    ],
+    "it_skills": [
+      "Pack Office",
+      "ERP SAP",
+      "Divalto",
+      "Easyphone",
+      "Teamviewer",
+      "FTP",
+      "Editeur Web",
+      "CMS Wordpress"
+    ]
+  },
+  "certifications": [
+    {
+      "name": "",
+      "issuer": "",
+      "date_obtained": "",
+      "expiry_date": "",
+      "credential_id": "",
+      "credential_url": ""
+    }
+  ],
+  "languages": [
+    {
+      "language": "",
+      "level": "",
+      "certificates": []
+    }
+  ],
+  "interests": [],
+  "project_achievements": [
+    {
+      "id": "",
+      "service_type": "",
+      "client": "",
+      "title": "",
+      "period": {
+        "start": "",
+        "end": ""
+      },
+      "role": [],
+      "sectors": [],
+      "competencies": [],
+      "keywords": [],
+      "synonyms": {},
+      "description": ""
+    }
+  ],
+  "meta": {
+    "cv_uuid": "ae8c99e7-f59b-4937-9c38-85b7e170df5c",
+    "cv_title": "Marc_Valentin_Customer_Service_Manager_20260316",
+    "parsing_errors": [
+      "Unmapped: 'DOMAINES DE COMPETENCES' — no matching field",
+      "Unmapped: 'MANAGEMENT - FORMATION – GESTION DE BACK OFFICE CLIENT' — no matching field",
+      "Unmapped: 'GESTION DE PROJET' — no matching field",
+      "Unmapped: 'INFORMATIQUE – WEBMASTER – SEO' — no matching field",
+      "Unmapped: 'PARCOURS PROFESSIONNEL' — no matching field",
+      "Unmapped: 'FORMATIONS' — no matching field"
+    ],
+    "ats_processed": true,
+    "processor_engine": "barba_cv_engine_1.2_example",
+    "parsed_at": "2026-03-16",
+    "source_original_text": "",
+    "source_ats_revised_text": "",
+    "original_filename": "Marc_Valentin_Customer_Service_Manager_20260316.json",
+    "source_format": "json",
+    "ingested_at": "2026-03-16",
+    "embedded_at": "",
+    "extraction_confidence_overall": 0.9
+  },
+  "extensions": {}
+}
