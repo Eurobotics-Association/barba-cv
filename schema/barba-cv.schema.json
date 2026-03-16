@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://barba-cv.org/schema/barba-cv.schema.json",
+  "$id": "https://github.com/Eurobotics-Association/barba-cv/raw/refs/heads/main/schema/barba-cv.schema.json",
   "title": "Barba-CV Schema",
   "description": "Open-source deterministic JSON schema for structured CV data. Barba-CV v1.2 keeps the CV payload at root for backward compatibility while introducing a meta block and an extensions area.",
   "type": "object",
