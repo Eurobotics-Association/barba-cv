@@ -181,6 +181,27 @@ This makes it possible to:
 
 ---
 
+# 🔎 How Barba-CV Differs from Existing Approaches
+
+Several initiatives have attempted to structure CV data over the years, including **JSON Resume**, **HR Open Standards (HR‑XML / HR‑JSON)**, and **Europass CV**.
+
+Barba‑CV builds on the lessons learned from these efforts while focusing on the needs of **modern HR systems and AI pipelines**.
+
+| Feature                                    | Barba‑CV | JSON Resume    | HR‑XML / HR‑JSON           |
+| ------------------------------------------ | -------- | -------------- | -------------------------- |
+| Structured JSON schema                     | ✅        | ✅              | ⚠️ Mostly XML              |
+| Designed for AI / LLM extraction pipelines | ✅        | ❌              | ❌                          |
+| Deterministic structure for validation     | ✅        | ⚠️ Partial     | ✅                          |
+| Lightweight and developer‑friendly         | ✅        | ✅              | ❌ Very complex             |
+| ATS compatibility focus                    | ✅        | ⚠️ Partial     | ✅                          |
+| Flexible rendering (HTML / DOCX / PDF)     | ✅        | ✅              | ❌                          |
+| Template‑based rendering (Jinja2 etc.)     | ✅        | ⚠️ Themes only | ❌                          |
+| Designed for modern HR‑IT interoperability | ✅        | ⚠️ Limited     | ⚠️ Enterprise integrations |
+
+Barba‑CV specifically targets the emerging workflow where **AI systems extract information from unstructured CV documents and convert it into deterministic structured data**.
+
+---
+
 # 🚀 Impact for the HR Industry
 
 As an **open‑source HR data standard**, Barba‑CV helps **rationalize the entire CV lifecycle**.
@@ -230,8 +251,10 @@ tools/
   cli/
 
 docs/
+  barba-cv-schema-reference.md
   design-principles.md
   ats-compatibility.md
+  ai-parsing-guidelines.md
 
 CHANGELOG.md
 VERSIONING.md
