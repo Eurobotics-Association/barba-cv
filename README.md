@@ -320,6 +320,8 @@ The Barba‑CV specification can be implemented by **any developer or company**.
 
 However, some partners build **reference implementations or official services** around the standard.
 
+if you want to become a partner : contact@eurobotics.org 
+
 Current entitled partners:
 
 * **mcp‑nantua** — API gateway and service layer implementing the Barba‑CV processing ecosystem
@@ -374,6 +376,8 @@ We welcome contributions that improve:
 * interoperability
 
 Please open an issue before proposing **major changes to the specification**.
+
+if you want to become a contributor : contact@eurobotics.org 
 
 ---
 
