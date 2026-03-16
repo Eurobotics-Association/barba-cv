@@ -1,0 +1,211 @@
+{
+  "barba_cv_version": "1.2",
+  "personal_info": {
+    "first_name": "Nassim",
+    "middle_name": "",
+    "last_name": "Karoubi",
+    "date_of_birth": "",
+    "driving_licenses": [],
+    "address": {
+      "street": "8 allée des Bleuets",
+      "postal_code": "91300",
+      "city": "Massy",
+      "country": "France"
+    },
+    "contact": {
+      "email": "nassim.karoubi@example.org",
+      "phone": "+33 6 14 92 33 48"
+    },
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/nassim-karoubi",
+      "github": "",
+      "website": "",
+      "twitter": "",
+      "other_socials": []
+    }
+  },
+  "profile_summary": "En deuxième année d’école de commerce, je suis à la recherche active d’un stage au sein d’une Start Up.\n\nCela me permettra de consolider mes acquis et d’enrichir mon expérience professionnelle par un travail en\noù dynamisme, partage et investissement personnel sont de rigueur.",
+  "position_sought": [
+    "Business Development Internship",
+    "Sales | Startup | Operations"
+  ],
+  "experiences": [
+    {
+      "organization": "Maison de l’Optique Centrale",
+      "role_title": "V Vente conseil",
+      "location": {
+        "city": "Saint Pierre du Perray",
+        "country": "France"
+      },
+      "start_date": "Mai 2020",
+      "end_date": "Juin 2020",
+      "website": "",
+      "logo": "",
+      "tasks": [
+        "Contact client, vente, suivi administratif."
+      ],
+      "achievements": []
+    },
+    {
+      "organization": "Hydrotech Bâtiment (entreprise d’étanchéité)",
+      "role_title": "Assistant conducteur de travaux",
+      "location": {
+        "city": "",
+        "country": "France"
+      },
+      "start_date": "Juillet 2019",
+      "end_date": "Aout 2019",
+      "website": "",
+      "logo": "",
+      "tasks": [
+        "Gestion de chantiers, coordination des effectifs (Etancheurs,",
+        "Manutentionnaires), élaboration de devis clients"
+      ],
+      "achievements": []
+    },
+    {
+      "organization": "Hydrotech Bâtiment",
+      "role_title": "Stage Hydrotech Bâtiment",
+      "location": {
+        "city": "Saint Pierre du Perray",
+        "country": "France"
+      },
+      "start_date": "Février 2018",
+      "end_date": "Février 2018",
+      "website": "",
+      "logo": "",
+      "tasks": [
+        "Enregistrement des commandes et émission de factures."
+      ],
+      "achievements": []
+    },
+    {
+      "organization": "Cabinet de conseil juridique",
+      "role_title": "Archivage",
+      "location": {
+        "city": "Corbeil",
+        "country": "France"
+      },
+      "start_date": "Juillet 2017",
+      "end_date": "Juillet 2017",
+      "website": "",
+      "logo": "",
+      "tasks": [],
+      "achievements": []
+    }
+  ],
+  "education": [
+    {
+      "school": "École Supérieure de Management Urbain",
+      "degree": "Master en management",
+      "field": "",
+      "start_date": "2020",
+      "end_date": "",
+      "website": "",
+      "logo": "",
+      "school_location": {
+        "city": "Paris 75007, France",
+        "country": ""
+      }
+    },
+    {
+      "school": "Lycée Saint-Exupéry, Massy",
+      "degree": "Baccalauréat série ES avec Mention",
+      "field": "",
+      "start_date": "2018",
+      "end_date": "2019",
+      "website": "",
+      "logo": "",
+      "school_location": {
+        "city": "Evry, France",
+        "country": ""
+      }
+    }
+  ],
+  "skills": {
+    "it_skills": [
+      "Excel",
+      "Word",
+      "PowerPoint",
+      "Photoshop",
+      "IOS",
+      "Windows"
+    ],
+    "hard_skills": [],
+    "soft_skills": [
+      "Impliqué",
+      "motivé",
+      "déterminé"
+    ]
+  },
+  "certifications": [
+    {
+      "name": "",
+      "issuer": "",
+      "date_obtained": "",
+      "expiry_date": "",
+      "credential_id": "",
+      "credential_url": ""
+    }
+  ],
+  "languages": [
+    {
+      "language": "Espagnol",
+      "level": "",
+      "certificates": []
+    },
+    {
+      "language": "Anglais",
+      "level": "",
+      "certificates": []
+    },
+    {
+      "language": "Français",
+      "level": "",
+      "certificates": []
+    }
+  ],
+  "interests": [
+    "Sports : Golf, Football, Karaté, Natation",
+    "Voyages : Etats Unis, Dubaï, Malte, République Dominicaine, Espagne…"
+  ],
+  "project_achievements": [
+    {
+      "id": "",
+      "service_type": "",
+      "client": "",
+      "title": "",
+      "period": {
+        "end": "",
+        "start": ""
+      },
+      "role": [],
+      "sectors": [],
+      "competencies": [],
+      "keywords": [],
+      "synonyms": {},
+      "description": ""
+    }
+  ],
+  "meta": {
+    "cv_uuid": "39434f7c-2be5-43aa-ab29-e542c1ffe7df",
+    "cv_title": "Nassim_Karoubi_Business_Development_Internship_20260316",
+    "parsing_errors": [
+      "Unmapped: '20 ans' — no matching field",
+      "Unmapped: 'Saint Pierre du\n\nPerray, 91' — no matching field",
+      "Unmapped: 'Evry, France' — no matching field",
+      "Unmapped: 'Paris 75007,\n\nFrance' — no matching field"
+    ],
+    "ats_processed": true,
+    "processor_engine": "barba_cv_engine_1.2_example",
+    "parsed_at": "2026-03-16",
+    "source_original_text": "",
+    "source_ats_revised_text": "",
+    "original_filename": "Nassim_Karoubi_Business_Development_Internship_20260316.json",
+    "source_format": "json",
+    "ingested_at": "2026-03-16",
+    "embedded_at": "",
+    "extraction_confidence_overall": 0.9
+  },
+  "extensions": {}
+}
