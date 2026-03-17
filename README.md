@@ -6,6 +6,82 @@ Barba-CV is an **open-source specification** (not a parser service) that defines
 
 CV data is inherently heterogeneous—often incomplete, inconsistently structured, and partially normalized. The Barba-CV schema therefore enforces deterministic structure while preserving semantic flexibility, allowing real-world CV data to be represented without unrealistic constraints.
 
+## Documentation
+
+Full documentation is available at:
+
+https://eurobotics-association.github.io/barba-cv/
+
+---
+
+## Why Barba-CV exists
+
+Barba-CV exists to solve a fundamental problem in recruitment technology.
+
+Recruitment systems receive thousands of CVs written in very different formats, layouts, and structures. Traditional CV parsing systems are fragile and frequently lose information when converting resumes into structured data.
+
+Barba-CV introduces a deterministic JSON representation of CV data so that the information contained in a resume can be represented in a reliable and machine-readable format.
+
+This enables:
+
+• reliable CV parsing by AI systems
+• interoperability between ATS platforms
+• structured data exchange between HR systems
+• processing of candidate profiles by autonomous AI agents
+
+Barba-CV is designed to be both **deterministic and flexible**, allowing it to represent the wide diversity of CV structures while preserving the original information without hallucination or reinterpretation.
+
+---
+
+## Deterministic structure for AI and ATS systems
+
+AI systems and LLM pipelines require deterministic structures to reliably extract and store information from unstructured CV text.
+
+Barba-CV provides such a framework using JSON and JSON Schema.
+
+Key design principles:
+
+• deterministic structure for reliable parsing
+• flexibility to represent different CV styles
+• preservation of original information without hallucination
+• compatibility with AI agent pipelines
+
+The schema allows AI systems to map extracted CV text directly into structured JSON while keeping the original meaning intact.
+
+---
+
+## Efficient storage and interoperability
+
+Using JSON (and JSONB in modern databases) provides several benefits:
+
+• highly efficient storage of structured CV data
+• easy exchange between systems
+• compression and indexing in databases
+• compatibility with modern APIs
+
+This makes Barba-CV suitable for:
+
+• AI pipelines
+• HR platforms
+• recruitment automation systems
+• data warehouses
+
+---
+
+## Rendering and document generation
+
+Barba-CV also enables deterministic rendering of CVs into different formats.
+
+Because the data structure is standardized, it can easily be rendered using template engines such as Jinja into:
+
+• HTML
+• PDF
+• DOCX
+
+This allows organizations to generate CV formats adapted to their own branding or recruitment workflows while keeping a single structured representation of the candidate data.
+
+---
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/Eurobotics-Association/barba-cv/96262ad2165e279f1f00697fd7c231a0ca3dedf6/logo/Barba-CV_transforming_resumes_seamlessly_v2_off_20260317.png" width="50%">
   <br>
