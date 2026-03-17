@@ -26,6 +26,10 @@ CV data is inherently heterogeneous—often incomplete, inconsistently structure
   <img src="https://raw.githubusercontent.com/Eurobotics-Association/barba-cv/96262ad2165e279f1f00697fd7c231a0ca3dedf6/logo/Barba-CV_transforming_resumes_seamlessly_v2_off_20260317.png" width="50%">
 </p>
 
+**testing barba-cv at work:**
+
+https://wp.nantua.net/barba-cv-flattenizer/
+
 ---
 
 # 🔮 Vision
