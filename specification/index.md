@@ -6,7 +6,7 @@ permalink: /specification/
 
 Barba-CV defines a deterministic JSON structure for CV/resume data exchange across AI extraction workflows, ATS platforms, and HR systems.
 
-## Canonical schema
+## Reference schema
 
 - [`schema/barba-cv.schema.json`](https://github.com/Eurobotics-Association/barba-cv/blob/main/schema/barba-cv.schema.json)
 
