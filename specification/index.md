@@ -8,7 +8,7 @@ Barba-CV defines a deterministic JSON structure for CV/resume data exchange acro
 
 ## Reference schema
 
-- [`schema/barba-cv.schema.json`](https://github.com/Eurobotics-Association/barba-cv/blob/main/schema/barba-cv.schema.json)
+- [`schema/barba-cv.schema.json`](../schema/barba-cv.schema.json)
 
 ## Scope
 

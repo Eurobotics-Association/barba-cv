@@ -1,3 +1,9 @@
+---
+title: Visual Overview
+layout: page
+description: Visual overview of Barba-CV as a deterministic structured layer between unstructured CV content and AI, ATS, and HR workflows.
+---
+
 # Visual Overview
 
 Barba-CV provides a deterministic structured layer between unstructured CV documents and AI / ATS systems.
@@ -45,3 +51,11 @@ Barba-CV enables:
 - interoperability between AI systems
 - reliable HR data pipelines
 - schema-driven parsing
+
+## Related documentation
+
+- [Documentation Hub](./index.md)
+- [Visual Overview](./visual-overview.md)
+- [Design Principles](./design-principles.md)
+- [LLM Integration](./llm-integration.md)
+- [AI Parsing Guidelines](./ai-parsing-guidelines.md)
