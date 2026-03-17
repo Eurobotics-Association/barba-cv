@@ -430,9 +430,10 @@ Since then, the project has continued to evolve through experimentation, impleme
 
 # 📬 Contacts
 
-**Eurobotics.org**
+**Eurobotics.org** | www.eurobotics.org 
  | Non‑Profit Organisation — Loi 1901
- | [contact@eurobotics.org](mailto:contact@eurobotics.org)
+ 
+  [contact@eurobotics.org](mailto:contact@eurobotics.org)
  | Compiègne | France
 
 ---
