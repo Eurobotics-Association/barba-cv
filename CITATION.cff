@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+title: Barba-CV
+message: If you use Barba-CV, please cite it as below.
+type: standard
+authors:
+  - family-names: Vergnes
+    given-names: Robert
+    affiliation: Eurobotics Association
+repository-code: https://github.com/Eurobotics-Association/barba-cv
+url: https://eurobotics-association.github.io/barba-cv/
+license: Apache-2.0
+version: 1.2
+date-released: 2026-03-17
+abstract: >
+  Barba-CV is an open JSON standard for deterministic representation
+  of CV / resume data designed for AI parsing, ATS interoperability
+  and agent-based workflows.
+keywords:
+  - resume
+  - cv
+  - json
+  - ai
+  - ats
+  - hr-tech
+  - ai-agents
