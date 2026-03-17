@@ -1,0 +1,12 @@
+title: Barba-CV Specification
+description: Open, vendor-neutral JSON standard for deterministic CV/resume data
+theme: minima
+markdown: kramdown
+header_pages:
+  - index.md
+  - specification/index.md
+  - examples/index.md
+  - design-principles/index.md
+  - ai-parsing-guidance/index.md
+  - roadmap/index.md
+  - origin/index.md
