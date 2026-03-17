@@ -1,0 +1,15 @@
+Barba-CV
+
+Open JSON standard for structured CV / resume data.
+
+Specification:
+https://eurobotics-association.github.io/barba-cv/specification/
+
+Schema:
+https://github.com/Eurobotics-Association/barba-cv/schema/barba-cv.schema.json
+
+Documentation:
+https://eurobotics-association.github.io/barba-cv/docs/
+
+Purpose:
+Enable reliable CV parsing by AI systems and interoperability with ATS platforms.
