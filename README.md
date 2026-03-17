@@ -1,443 +1,188 @@
-# 🧾 Barba‑CV
+# 🧾 Barba-CV
 
-> **An open‑source industry specification for deterministic, machine‑readable CV data.**
+> **Open, vendor-neutral JSON standard for deterministic, machine-readable CV/resume data.**
 
-Barba‑CV is an **open‑source specification** for representing CV / resume data in a **structured, deterministic, and machine‑readable JSON format** optimized for:
-
-* 🤖 **AI processing**
-* 📄 **ATS compatibility**
-* 🔗 **interoperability between HR tools**
-* 🧠 **machine learning & analytics**
-* 🗂 **long‑term data portability**
-
-The goal of this **open‑source project** is to provide a **simple, deterministic, and vendor‑neutral CV data standard** that can be used by:
-
-* developers
-* HR platforms
-* recruiting software
-* AI systems
-* automation pipelines
+Barba-CV is an **open-source specification** (not a parser service) that defines a normalized JSON format for CV/resume data so AI systems, ATSs, and HR software can exchange profiles reliably.
 
 CV data is inherently heterogeneous—often incomplete, inconsistently structured, and partially normalized. The Barba-CV schema therefore enforces deterministic structure while preserving semantic flexibility, allowing real-world CV data to be represented without unrealistic constraints.
 
----
+## What Barba-CV is / is not
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Eurobotics-Association/barba-cv/96262ad2165e279f1f00697fd7c231a0ca3dedf6/logo/Barba-CV_transforming_resumes_seamlessly_v2_off_20260317.png" width="50%">
-</p>
+**Barba-CV is:**
+- ✅ an open, vendor-neutral **data standard**
+- ✅ a deterministic **JSON schema** for CV structure
+- ✅ a common target format for AI extraction pipelines and ATS interoperability
 
-**testing barba-cv at work:**
+**Barba-CV is not:**
+- ❌ a public parsing engine in this repository
+- ❌ a full recruiting platform or paid processing service
+- ❌ a replacement for service-layer projects
 
-https://wp.nantua.net/barba-cv-flattenizer/
-
----
-
-# 🔮 Vision
-
-As an **open‑source ecosystem**, Barba‑CV aims to become a **de‑facto open standard for structured CV data**, enabling a new generation of:
-
-* AI‑native recruiting platforms
-* interoperable HR systems
-* portable career profiles
-* automated talent analytics
-
-The long‑term vision is a world where **career data is portable, structured, and interoperable across the entire HR ecosystem.**
+If you need API/service infrastructure around Barba-CV, see **MCP Nantua** (separate repository):
+- https://github.com/lgb-sas/mcp-nantua
 
 ---
 
-# 🌍 The Industry Problem
+## Why this matters (AI + ATS + interoperability)
 
-Recruiters and HR systems process **millions of CVs every year**, yet the industry still relies on **unstructured documents**.
+CVs are usually stored as PDFs or DOCX files designed for visual reading, not structured data. For software systems this creates recurring problems:
+- inconsistent layouts and section names
+- extraction variability across OCR/LLM pipelines
+- fragile downstream matching and analytics
+- poor cross-system portability
 
-Even when CVs are provided as **PDF (the most common format used globally)**, they remain extremely difficult to process.
+Barba-CV solves this by defining a deterministic JSON structure that becomes the **source of truth** for candidate data.
 
-Typical problems include:
+Typical pipeline:
 
-* multi‑column layouts
-* custom typography
-* graphics and icons
-* tables used as layout systems
-* inconsistent section naming
-* different ordering of information
-
-Two CVs containing the **exact same information** can look completely different.
-
-For recruiters, this creates a real operational problem:
-
-* reading large volumes of CVs becomes **mentally exhausting**
-* information is **hard to locate quickly**
-* comparisons between candidates become **inefficient**
-
-For software systems the problem is even worse:
-
-* parsing is unreliable
-* information extraction becomes probabilistic
-* ATS systems lose data
-* automation pipelines become fragile
-
-In other words:
-
-> The industry stores critical career information inside **documents designed for visual presentation instead of structured data.**
-
----
-
-# 🎯 The Barba‑CV Approach
-
-Barba‑CV, as an **open‑source standard**, introduces a **deterministic JSON format** for CV data.
-
-Instead of trying to analyse arbitrary document layouts, Barba‑CV defines a **normalized structure** that allows the industry to:
-
-* extract CV data once
-* store it in a structured format
-* render it consistently
-* analyse it reliably
-
-This enables:
-
-* ✅ deterministic data extraction
-* ✅ standardized CV structure
-* ✅ reliable ATS processing
-* ✅ AI‑ready CV datasets
-* ✅ long‑term candidate portability
-
-## 🤖 Designed for AI and LLM Systems
-
-Modern AI systems and LLMs are powerful at interpreting unstructured documents such as PDFs or Word files, but their outputs are often **non‑deterministic**. This means the same CV may be parsed slightly differently each time.
-
-Barba‑CV templates provide the **deterministic missing piece** in this pipeline.
-
-They allow AI systems to:
-
-* convert messy, unorganized CV documents
-* processed through **non‑deterministic AI / LLM systems**
-* into a **strict, deterministic structured format**.
-
-In practice the pipeline becomes:
-
-```
-Unstructured CV (PDF / DOCX)
+```text
+Unstructured CV (PDF/DOCX)
         ↓
-LLM / AI extraction
+AI/LLM extraction (probabilistic)
         ↓
-Barba‑CV deterministic template
+Barba-CV mapping (deterministic)
         ↓
-Structured CV dataset
+Validated, portable, queryable CV data
 ```
 
-Barba‑CV is therefore **explicitly designed to help AI systems parse CVs into a structured template** that can be validated, stored, analysed, and rendered reliably.
-
-Barba‑CV acts as a **canonical data layer for CV information**.
-
-Documents (PDF, DOCX, HTML) then become **renderings of structured data**, not the source of truth.
-
 ---
 
-# 💾 Storage Efficiency
+## Comparison with existing formats
 
-Barba‑CV also improves how CV data is **stored and managed at scale**.
+Barba-CV addresses a similar problem space as **JSON Resume**, **HR-XML / HR-JSON**, and **Europass CV**, with a focused scope for deterministic CV data pipelines.
 
-Because the format is structured JSON, CVs can be stored efficiently in modern databases such as **PostgreSQL JSONB**.
+| Format | Primary focus | Main limitation | Barba-CV angle |
+|---|---|---|---|
+| JSON Resume | Lightweight developer resume JSON | Less oriented to AI extraction + ATS normalization workflows | Deterministic schema targeting AI/ATS interoperability |
+| HR-XML / HR-JSON | Broad enterprise HR data exchange | Often heavier to implement for CV-first pipelines | Developer-friendly CV-focused JSON structure |
+| Europass CV | Standardized profile presentation in EU context | Less flexible for cross-platform technical pipeline integration | Vendor-neutral structured format for interoperable CV data |
 
-Benefits include:
+Barba-CV emphasizes deterministic structured CV data, compatibility with AI extraction mapping, ATS interoperability, and a schema-first developer workflow.
 
-* 📉 **Highly compressible storage** compared to PDF or DOCX
-* 🗄 **Efficient indexing and querying** of candidate data
-* ⚡ **fast search across millions of CVs**
+## Rendering
 
-Large HR platforms storing **hundreds of thousands or millions of CVs** can dramatically reduce storage usage.
+Barba-CV defines the structured data layer of a CV. Presentation formats are generated by external rendering systems.
 
-Instead of storing heavy documents, they store **compressed structured career data**.
+Possible outputs include:
+- PDF
+- HTML
+- DOCX
 
-Documents then become **rendered views of that data**, generated when needed.
+Conceptual pipeline:
 
----
-
-# 🎨 Rendering CVs in Any Format
-
-A Barba‑CV profile is **layout‑agnostic**.
-
-This means the same CV data can be rendered into **any format or layout** depending on the target use case.
-
-Examples:
-
-* 📄 PDF
-* 🌐 HTML
-* 📝 DOCX
-* 📑 ATS‑optimized layouts
-* 📊 AI‑optimized representations
-
-Barba‑CV supports rendering through **Jinja2 templates**, enabling flexible generation of documents from structured CV data.
-
-Examples:
-
-* single‑column CVs optimized for ATS
-* multi‑column CVs optimized for human reading
-* compact recruiter views
-* AI‑friendly machine representations
-
-Typical rendering pipeline:
-
-```
-Barba‑CV JSON
+```text
+Barba-CV JSON
      ↓
-Jinja2 Template
+Template
      ↓
-HTML / DOCX / PDF
+PDF / HTML / DOCX
 ```
 
-This makes it possible to:
+This repository does not include rendering tools.
 
-* standardize CV presentation
-* generate multiple layouts from one dataset
-* adapt rendering for AI or human consumption
+## Storage and analytics
 
----
+Because Barba-CV payloads are structured JSON, they can be stored and queried in systems such as:
+- PostgreSQL JSONB
+- document databases
+- analytics platforms
 
-# 🔎 How Barba-CV Differs from Existing Approaches
-
-Several initiatives have attempted to structure CV data over the years, including **JSON Resume**, **HR Open Standards (HR‑XML / HR‑JSON)**, and **Europass CV**.
-
-Barba‑CV builds on the lessons learned from these efforts while focusing on the needs of **modern HR systems and AI pipelines**.
-
-| Feature                                    | Barba‑CV | JSON Resume    | HR‑XML / HR‑JSON           |
-| ------------------------------------------ | -------- | -------------- | -------------------------- |
-| Structured JSON schema                     | ✅        | ✅              | ⚠️ Mostly XML              |
-| Designed for AI / LLM extraction pipelines | ✅        | ❌              | ❌                          |
-| Deterministic structure for validation     | ✅        | ⚠️ Partial     | ✅                          |
-| Lightweight and developer‑friendly         | ✅        | ✅              | ❌ Very complex             |
-| ATS compatibility focus                    | ✅        | ⚠️ Partial     | ✅                          |
-| Flexible rendering (HTML / DOCX / PDF)     | ✅        | ✅              | ❌                          |
-| Template‑based rendering (Jinja2 etc.)     | ✅        | ⚠️ Themes only | ❌                          |
-| Designed for modern HR‑IT interoperability | ✅        | ⚠️ Limited     | ⚠️ Enterprise integrations |
-
-Barba‑CV specifically targets the emerging workflow where **AI systems extract information from unstructured CV documents and convert it into deterministic structured data**.
+This supports use cases like structured search, candidate analytics, machine learning datasets, and large-scale CV databases.
 
 ---
 
-# 🚀 Impact for the HR Industry
+## Quick navigation
 
-As an **open‑source HR data standard**, Barba‑CV helps **rationalize the entire CV lifecycle**.
-
-For HR organizations this means:
-
-* 📉 **reduced storage costs** when managing large CV databases
-* ⚡ **faster candidate search and filtering**
-* 📑 **consistent CV layouts for recruiters**
-* 🤖 **AI‑ready datasets for talent analysis**
-* 🔎 **better candidate comparison**
-
-For recruiters:
-
-* CVs become **easier and faster to read**
-* candidate information becomes **consistent across profiles**
-
-For HR platforms:
-
-* parsing becomes **deterministic instead of probabilistic**
-* systems become **simpler and more reliable**
-
-For candidates:
-
-* career data becomes **portable and reusable across platforms**
-
-Ultimately, Barba‑CV helps the industry:
-
-> **identify the right candidates faster by transforming CVs into structured data instead of visual documents.**
+- **Schema:** [`schema/barba-cv.schema.json`](schema/barba-cv.schema.json)
+- **Examples:** [`examples/`](examples)
+- **Design principles:** [`docs/design-principles.md`](docs/design-principles.md)
+- **AI mapping guidance:** [`docs/ai-parsing-guidelines.md`](docs/ai-parsing-guidelines.md)
+- **Roadmap / validator status:** [`docs/roadmap.md`](docs/roadmap.md)
+- **License:** [`LICENSE`](LICENSE)
 
 ---
 
-# 📦 Repository contents
+## Repository contents
 
-```
+```text
 barba-cv/
-
-schema/
-  barba-cv.schema.json
-
-examples/
-  simple-example.json
-  multi-experience-example.json
-
-tools/
-  validator/
-  cli/
-
-docs/
-  barba-cv-schema-reference.md
-  design-principles.md
-  ats-compatibility.md
-  ai-parsing-guidelines.md
-
-CHANGELOG.md
-VERSIONING.md
-BARBA-CV_SPEC_VERSION
-LICENSE
-TRADEMARKS.md
-COMPATIBILITY.md
+├── schema/
+│   └── barba-cv.schema.json
+├── examples/
+│   ├── barba-cv.template.json
+│   ├── Clara_Delaunay_International_Internship_20260316.json
+│   ├── Marc_Valentin_Customer_Service_Manager_20260316.json
+│   └── Nassim_Karoubi_Business_Development_Internship_20260316.json
+├── docs/
+│   ├── ai-parsing-guidelines.md
+│   ├── design-principles.md
+│   ├── genesis.md
+│   └── roadmap.md
+├── logo/
+├── LICENSE
+└── README.md
 ```
 
 ---
 
-# 📐 Specification
+## Specification scope
 
-The core of Barba‑CV is the JSON schema located in:
+The schema defines normalized CV sections such as:
+- personal information
+- profile summary and target position
+- work experiences and education
+- skills, certifications, languages, interests
+- project achievements
+- processing metadata (`meta`) and controlled extensions (`extensions`)
 
-```
-schema/barba-cv.schema.json
-```
-
-This schema defines standardized fields such as:
-
-* 👤 candidate identity
-* 🎓 education
-* 💼 work experience
-* 🧠 skills
-* 📜 certifications
-* 🧾 publications
-* 🧩 additional structured sections
-
-The schema follows **semantic versioning**.
-
-Current version is defined in:
-
-```
-BARBA-CV_SPEC_VERSION
-```
+Barba-CV is intended to serve as a **normalized data layer for CV/resume interoperability**. Different renderers and services can be built on top of it.
 
 ---
 
-# 🧪 Compatibility levels
+## Example payloads
 
-The Barba‑CV ecosystem defines several levels of compatibility.
+Start with:
+- template: [`examples/barba-cv.template.json`](examples/barba-cv.template.json)
+- internship profile: [`examples/Clara_Delaunay_International_Internship_20260316.json`](examples/Clara_Delaunay_International_Internship_20260316.json)
+- management profile: [`examples/Marc_Valentin_Customer_Service_Manager_20260316.json`](examples/Marc_Valentin_Customer_Service_Manager_20260316.json)
+- business development profile: [`examples/Nassim_Karoubi_Business_Development_Internship_20260316.json`](examples/Nassim_Karoubi_Business_Development_Internship_20260316.json)
 
-| Label                      | Meaning                                    |
-| -------------------------- | ------------------------------------------ |
-| 🟢 Barba‑CV Compatible     | Generates valid JSON respecting the schema |
-| 🟡 Barba‑CV Certified      | Validated by official validation tools     |
-| 🔵 Official Implementation | Maintained by the Barba‑CV maintainers     |
-
-Details are defined in:
-
-```
-COMPATIBILITY.md
-```
+Recommended next additions (incremental):
+- a **senior technical profile** example (engineering-heavy vocabulary)
+- a **career-switch profile** example (non-linear timeline)
 
 ---
 
-# 🤝 Entitled partners
+## Versioning and compatibility
 
-The Barba‑CV specification can be implemented by **any developer or company**.
+- The format version is carried by `barba_cv_version` in each payload.
+- Schema evolution is managed conservatively to keep interoperability high.
+- Compatibility labels and formal certification tooling are documented and evolving.
 
-However, some partners build **reference implementations or official services** around the standard.
-
-if you want to become a partner : contact@eurobotics.org 
-
-Current entitled partners:
-
-* **mcp‑nantua** — API gateway and service layer implementing the Barba‑CV processing ecosystem
-
-More information:
-
-[https://github.com/lgb-sas/mcp-nantua](https://github.com/lgb-sas/mcp-nantua)
+See: [`docs/roadmap.md`](docs/roadmap.md)
 
 ---
 
-# 📜 License
+## License and trademark
 
-Barba‑CV is released as an **open‑source standard** and this project is licensed under the **Apache License 2.0**.
-
-This allows:
-
-* commercial usage
-* SaaS implementations
-* forks and improvements
-
-while providing **patent protection for contributors**.
-
-See:
-
-```
-LICENSE
-```
+- License: Apache-2.0 (`LICENSE`)
+- Trademark notice: “Barba-CV” is maintained by Eurobotics; naming use must not imply false endorsement.
 
 ---
 
-# ™ Trademark
+## Contributing
 
-"Barba‑CV" is a trademark of **Eurobotics**.
+Contributions are welcome for:
+- schema clarity
+- documentation
+- examples
+- interoperability guidance
 
-Forks of this repository may not use the name "Barba‑CV" in a way that implies endorsement, certification, or official compatibility unless explicitly approved by the maintainers.
+For major specification changes, open an issue first to discuss scope and compatibility impact.
 
-See:
-
-```
-TRADEMARKS.md
-```
-
----
-
-# 🚀 Contributing
-
-We welcome contributions that improve:
-
-* schema clarity
-* validation tools
-* documentation
-* interoperability
-
-Please open an issue before proposing **major changes to the specification**.
-
-if you want to become a contributor : contact@eurobotics.org 
 
 ---
 
-# 🏛 Maintainers
+## Project origin
 
-Barba‑CV is maintained by **Eurobotics** with contributions from the community.
-
----
-
-# 🌱 Genesis of the Barba‑CV Project
-
-Barba‑CV emerged from **real operational problems observed in the HR and consulting industry**.
-
-In **mid‑2025**, Robert Vergnes (President of **Eurobotics.org**) was involved in multiple industrial and consulting projects where discussions with executives from **large industrial companies, consulting firms, and HR teams** repeatedly highlighted the same issue:
-
-> Managing CVs at scale was becoming increasingly painful for both organizations and candidates.
-
-Several recurring problems were identified:
-
-* organizations managing **thousands of candidate CVs** struggled with inconsistent formats
-* recruiters had to review **large volumes of visually different documents**, slowing down evaluation
-* candidates found it difficult to **maintain and update their own CVs across multiple systems**
-* HR IT systems were forced to parse **documents designed for visual presentation rather than structured data**
-
-Despite the existence of ATS platforms and HR software, the underlying data problem remained unresolved.
-
-CVs were still fundamentally **documents instead of structured career records**.
-
-During the summer of 2025, many CV formats and HR systems were reviewed. The conclusion was simple:
-
-> The industry needed a **small standardized database structure for each CV**.
-
-Rather than inventing a complex system, the project chose a pragmatic approach:
-
-* represent CV data as **structured JSON**
-* define a **deterministic schema**
-* allow any platform to **store, render, or analyse the data consistently**
-
-By **September 2025**, the first **Barba‑CV JSON template** was created.
-
-Since then, the project has continued to evolve through experimentation, implementation, and feedback from recruiters, engineers, and industry partners.
-
----
-
-# 📬 Contacts
-
-**Eurobotics.org** | www.eurobotics.org 
- | Non‑Profit Organisation — Loi 1901
- 
-  [contact@eurobotics.org](mailto:contact@eurobotics.org)
- | Compiègne | France
-
----
+See [`docs/genesis.md`](docs/genesis.md) for background on how the Barba-CV specification emerged.
