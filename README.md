@@ -6,6 +6,12 @@ Barba-CV is an **open-source specification** (not a parser service) that defines
 
 CV data is inherently heterogeneous—often incomplete, inconsistently structured, and partially normalized. The Barba-CV schema therefore enforces deterministic structure while preserving semantic flexibility, allowing real-world CV data to be represented without unrealistic constraints.
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Eurobotics-Association/barba-cv/96262ad2165e279f1f00697fd7c231a0ca3dedf6/logo/Barba-CV_transforming_resumes_seamlessly_v2_off_20260317.png" width="50%">
+  <br>
+  <em>Barba-CV transforms heterogeneous CVs into a standardized format.</em>
+</p>
+
 ## What Barba-CV is / is not
 
 **Barba-CV is:**
@@ -40,7 +46,7 @@ Unstructured CV (PDF/DOCX)
         ↓
 AI/LLM extraction (probabilistic)
         ↓
-Barba-CV mapping (deterministic)
+Barba-CV schema mapping (deterministic)
         ↓
 Validated, portable, queryable CV data
 ```
