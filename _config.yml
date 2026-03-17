@@ -1,13 +1,12 @@
-title: Barba-CV Specification
-description: Open, vendor-neutral JSON standard for deterministic CV/resume data
+title: Barba-CV
+description: Open-source deterministic JSON standard for structured CV and resume data, designed for AI parsing, ATS compatibility, and HR interoperability.
 theme: minima
 markdown: kramdown
+plugins:
+  - jekyll-seo-tag
 header_pages:
   - index.md
-  - docs/visual-overview.md
-  - specification/index.md
-  - examples/index.md
-  - design-principles/index.md
-  - ai-parsing-guidance/index.md
+  - docs/index.md
   - roadmap/index.md
+  - examples/index.md
   - origin/index.md

@@ -1,3 +1,9 @@
+---
+title: Design Principles
+layout: page
+description: Core Barba-CV design principles for deterministic CV schema structure, semantic flexibility, and interoperability across AI and ATS systems.
+---
+
 # Design Principles
 
 Barba-CV is an open-source standard designed to represent CV / resume data in a way that is both **deterministic for systems** and **usable with real-world documents**.
@@ -224,3 +230,11 @@ Barba-CV is built on a simple principle:
 > **Deterministic structure, semantic flexibility.**
 
 This balance is what allows Barba-CV to serve as an open-source standard for AI parsing, ATS interoperability, HR workflows, and multi-format CV rendering.
+
+## Related documentation
+
+- [Documentation Hub](./index.md)
+- [Visual Overview](./visual-overview.md)
+- [Design Principles](./design-principles.md)
+- [LLM Integration](./llm-integration.md)
+- [AI Parsing Guidelines](./ai-parsing-guidelines.md)

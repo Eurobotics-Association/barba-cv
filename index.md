@@ -1,7 +1,8 @@
 ---
+title: Barba-CV
 layout: page
-title: Home
 permalink: /
+description: Barba-CV is an open-source deterministic JSON standard for CV and resume data, designed for AI extraction, ATS compatibility, and HR interoperability.
 ---
 
 <h1>
@@ -10,6 +11,17 @@ Barba-CV
 </h1>
 
 Barba-CV is an open, vendor-neutral JSON specification for deterministic, machine-readable CV/resume data.
+
+## Documentation
+
+- [Documentation Hub](./docs/)
+- [Visual Overview](./docs/visual-overview.md)
+- [Design Principles](./docs/design-principles.md)
+- [LLM Integration](./docs/llm-integration.md)
+- [AI Parsing Guidelines](./docs/ai-parsing-guidelines.md)
+- [Examples](./examples/)
+- [Roadmap](./roadmap/)
+- [Origin](./origin/)
 
 > “CV data is inherently heterogeneous—often incomplete, inconsistently structured, and partially normalized. The Barba-CV schema therefore enforces deterministic structure while preserving semantic flexibility, allowing real-world CV data to be represented without unrealistic constraints.”
 
@@ -38,10 +50,10 @@ Barba-CV is an open, vendor-neutral JSON specification for deterministic, machin
 
 ## Quick links
 
-- [Schema (`schema/barba-cv.schema.json`)](https://github.com/Eurobotics-Association/barba-cv/blob/main/schema/barba-cv.schema.json)
-- [Examples (`examples/`)](https://github.com/Eurobotics-Association/barba-cv/tree/main/examples)
+- [Schema (`schema/barba-cv.schema.json`)](./schema/barba-cv.schema.json)
+- [Examples (`examples/`)](./examples/)
 - [Design principles](./design-principles/)
 - [AI parsing guidance](./ai-parsing-guidance/)
 - [Roadmap](./roadmap/)
 - [Project origin](./origin/)
-- [License (`LICENSE`)](https://github.com/Eurobotics-Association/barba-cv/blob/main/LICENSE)
+- [License (`LICENSE`)](./LICENSE)

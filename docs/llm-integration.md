@@ -1,3 +1,9 @@
+---
+title: LLM Integration
+layout: page
+description: How to use Barba-CV schema and structured format as a JSON mapping target for reliable AI extraction and LLM integration workflows.
+---
+
 # LLM Integration
 
 This document explains how Large Language Models (LLMs) and AI extraction systems can map unstructured CV content into the **Barba-CV JSON format**.
@@ -353,3 +359,11 @@ Barba-CV LLM integration is based on a simple idea:
 > Give the LLM a deterministic JSON target, and require it to map the source CV faithfully without inventing data.
 
 This is the core mechanism by which Barba-CV turns probabilistic AI extraction into reusable structured career data.
+
+## Related documentation
+
+- [Documentation Hub](./index.md)
+- [Visual Overview](./visual-overview.md)
+- [Design Principles](./design-principles.md)
+- [LLM Integration](./llm-integration.md)
+- [AI Parsing Guidelines](./ai-parsing-guidelines.md)

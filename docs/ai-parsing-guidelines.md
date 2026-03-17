@@ -1,8 +1,16 @@
+---
+title: AI Parsing Guidelines
+layout: page
+description: Guidelines for mapping unstructured resumes into Barba-CV JSON with deterministic parsing rules distinct from LLM integration strategy.
+---
+
 # AI Parsing Guidelines
 
 This document explains how AI systems (LLMs, extraction pipelines, or parsing engines) should transform unstructured CV data into the **Barba-CV JSON format**.
 
 Barba-CV is designed to act as the **deterministic structural layer** between probabilistic AI extraction and structured HR datasets.
+
+This page focuses on extraction and field-level mapping behavior, while [LLM Integration](./llm-integration.md) focuses on prompt packaging, orchestration, and schema-guided workflow design.
 
 ---
 
@@ -266,3 +274,11 @@ AI parsing with Barba-CV follows a simple rule:
 > Extract faithfully. Structure deterministically. Never invent data.
 
 This ensures reliable CV parsing while keeping the schema compatible with real-world documents.
+
+## Related documentation
+
+- [Documentation Hub](./index.md)
+- [Visual Overview](./visual-overview.md)
+- [Design Principles](./design-principles.md)
+- [LLM Integration](./llm-integration.md)
+- [AI Parsing Guidelines](./ai-parsing-guidelines.md)
