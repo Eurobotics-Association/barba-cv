@@ -4,11 +4,20 @@ title: Home
 permalink: /
 ---
 
+<h1>
+Barba-CV
+<img src="logo/Barba-CV-Icon-Site-V1_off_20260220.png" width="60" style="vertical-align:middle;">
+</h1>
+
 Barba-CV is an open, vendor-neutral JSON specification for deterministic, machine-readable CV/resume data.
 
 > “CV data is inherently heterogeneous—often incomplete, inconsistently structured, and partially normalized. The Barba-CV schema therefore enforces deterministic structure while preserving semantic flexibility, allowing real-world CV data to be represented without unrealistic constraints.”
 
-## Conceptual pipeline
+<p align="center">
+<img src="logo/Barba-CV_transforming_resumes_seamlessly_v2_off_20260317.png" width="600">
+</p>
+
+## Conceptual Pipeline
 
 1. Unstructured CV (PDF/DOCX)
 2. AI/LLM extraction (probabilistic)

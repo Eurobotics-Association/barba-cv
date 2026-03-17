@@ -4,6 +4,7 @@ theme: minima
 markdown: kramdown
 header_pages:
   - index.md
+  - docs/visual-overview.md
   - specification/index.md
   - examples/index.md
   - design-principles/index.md
