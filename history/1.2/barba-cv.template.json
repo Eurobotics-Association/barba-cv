@@ -1,0 +1,155 @@
+{
+  "barba_cv_version": "1.2",
+
+  "personal_info": {
+    "first_name": "",
+    "middle_name": "",
+    "last_name": "",
+    "date_of_birth": "",
+    "driving_licenses": [],
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "contact": {
+      "email": "",
+      "phone": ""
+    },
+    "links": {
+      "linkedin": "",
+      "github": "",
+      "website": "",
+      "twitter": "",
+      "other_socials": []
+    }
+  },
+
+  "profile_summary": "",
+
+  "position_sought": [
+    ""
+  ],
+
+  "experiences": [
+    {
+      "organization": "",
+      "role_title": "",
+      "location": {
+        "city": "",
+        "country": ""
+      },
+      "start_date": "",
+      "end_date": "",
+      "website": "",
+      "logo": "",
+      "tasks": [
+        ""
+      ],
+      "achievements": [
+        ""
+      ]
+    }
+  ],
+
+  "education": [
+    {
+      "school": "",
+      "degree": "",
+      "field": "",
+      "start_date": "",
+      "end_date": "",
+      "website": "",
+      "logo": "",
+      "school_location": {
+        "city": "",
+        "country": ""
+      }
+    }
+  ],
+
+  "skills": {
+    "it_skills": [
+      {
+        "name": "",
+        "level": "",
+        "category": "",
+        "keywords": []
+      }
+    ],
+    "hard_skills": [
+      {
+        "name": "",
+        "level": "",
+        "category": "",
+        "keywords": []
+      }
+    ],
+    "soft_skills": [
+      {
+        "name": "",
+        "level": "",
+        "category": "",
+        "keywords": []
+      }
+    ]
+  },
+
+  "certifications": [
+    {
+      "name": "",
+      "issuer": "",
+      "date_obtained": "",
+      "expiry_date": "",
+      "credential_id": "",
+      "credential_url": ""
+    }
+  ],
+
+  "languages": [
+    {
+      "language": "",
+      "level": "",
+      "certificates": []
+    }
+  ],
+
+  "interests": [
+    ""
+  ],
+
+  "project_achievements": [
+    {
+      "id": "",
+      "service_type": "",
+      "client": "",
+      "title": "",
+      "period": "",
+      "role": "",
+      "sectors": "",
+      "competencies": "",
+      "keywords": "",
+      "synonyms": "",
+      "description": ""
+    }
+  ],
+
+  "meta": {
+    "cv_uuid": "",
+    "cv_title": "",
+    "parsing_errors": [],
+    "ats_processed": null,
+    "processor_engine": "",
+    "parsed_at": "",
+    "source_original_text": "",
+    "source_ats_revised_text": "",
+    "original_filename": "",
+    "source_format": "",
+    "ingested_at": "",
+    "embedded_at": "",
+    "extraction_confidence_overall": null
+  },
+
+  "extensions": {}
+}

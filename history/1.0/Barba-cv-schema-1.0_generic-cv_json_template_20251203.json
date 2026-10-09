@@ -1,0 +1,178 @@
+{
+
+  "personal_info": {
+
+    "first_name": "",
+
+    "Middle_name": "",
+
+    "last_name": "",
+
+    "date_of_birth": "",
+
+    "driving_licenses": [],
+
+    "address": {
+
+      "street": "",
+
+      "street2": "",
+
+      "postal_code": "",
+
+      "city": "",
+
+      "country": ""
+
+    },
+
+    "contact": {
+
+      "phone": "",
+
+      "email": ""
+
+    },
+
+    "links": {
+
+      "linkedin": "",
+
+      "instagram": "",
+
+      "facebook": "",
+
+      "X/twitter": "",
+
+      "other_socials": []
+
+    }
+
+  },
+
+  "profile_summary": "",
+
+  "experiences": [
+
+    {
+
+      "organization": "",
+
+      "role_title": "",
+
+      "location": {
+
+        "city": "",
+
+        "country": ""
+
+      },
+
+      "start_date": "",
+
+      "end_date": "",
+
+      "website": "",
+
+      "logo": "",
+
+      "tasks": [],
+
+      "achievements": []
+
+    }
+
+  ],
+
+  "education": [
+
+    {
+
+      "school": "",
+
+      "degree": "",
+
+      "field": "",
+
+      "start_date": "",
+
+      "end_date": "",
+
+      "website": "",
+
+      "logo": "",
+
+      "school_location": ""
+
+    }
+
+  ],
+
+  "skills": {
+
+    "hard_skills": [],
+
+    "soft_skills": [],
+
+    "it_skills": []
+
+  },
+
+  "certifications": [
+
+    {
+
+      "name": "",
+
+      "issuer": "",
+
+      "date_obtained": "",
+
+      "expiry_date": "",
+
+      "credential_id": "",
+
+      "credential_url": ""
+
+    }
+
+  ],
+
+  "languages": [
+
+    {
+
+      "language": "",
+
+      "level": "",
+
+      "certificates": []
+
+    }
+
+  ],
+
+  "interests": [],
+
+  "projects_achievements_extracts": [
+{
+"id": "",
+"service_type": "",
+"client": "",
+"title": "",
+"period": {
+"start": "",
+"end": ""
+},
+"role": [],
+"sectors": [],
+"competencies": [],
+"keywords": [],
+"synonyms": {},
+"description": ""
+}
+],
+
+  "parsing_errors": [""]
+
+}
