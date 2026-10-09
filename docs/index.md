@@ -1,25 +1,26 @@
 ---
 title: Documentation
 layout: page
-description: Documentation hub for the Barba-CV open-source standard, including visual overview, design principles, LLM integration, and AI parsing guidance.
+permalink: /docs/
+description: Guides, field reference, compatibility and background for the Barba-CV open standard.
 ---
 
-This hub gathers the core Barba-CV documentation for implementers building AI extraction pipelines, ATS integrations, and interoperable HR workflows.
+# Documentation
 
-## Core documentation
+Barba-CV is an open JSON data standard for representing CV information. **1.3 is a candidate contract on `main`; no 1.3 release tag has been issued.** The original 1.0 template and published 1.2 artifacts remain in the [version archive]({{ '/history/' | relative_url }}).
 
-- [Visual Overview](./visual-overview.md)
-- [Design Principles](./design-principles.md)
-- [LLM Integration](./llm-integration.md)
-- [AI Parsing Guidelines](./ai-parsing-guidelines.md)
+## Start building
 
-## Specification assets
+- [Get started with 1.3]({{ '/docs/getting-started/' | relative_url }}) — minimal payload, example, and validation.
+- [1.3 field reference]({{ '/docs/field-reference/' | relative_url }}) — every defined field path and type.
+- [Skill objects]({{ '/docs/skills/' | relative_url }}) — name, level, category and keywords.
+- [Version and compatibility]({{ '/docs/compatibility/' | relative_url }}) — historical shapes and conversion caveats.
+- [1.3 candidate schema]({{ '/schema/barba-cv-1.3.schema.json' | relative_url }}) and [examples]({{ '/examples/' | relative_url }}).
 
-- [JSON Schema (`schema/barba-cv.schema.json`)](../schema/barba-cv.schema.json)
-- [Example JSON template (`examples/barba-cv.template.json`)](../examples/barba-cv.template.json)
+## Background
 
-## Related sections
-
-- [Examples](../examples/)
-- [Roadmap](../roadmap/)
-- [Origin](../origin/)
+- [Visual overview]({{ '/docs/visual-overview.html' | relative_url }})
+- [Design principles]({{ '/docs/design-principles.html' | relative_url }})
+- [LLM integration]({{ '/docs/llm-integration.html' | relative_url }})
+- [AI parsing guidelines]({{ '/docs/ai-parsing-guidelines.html' | relative_url }})
+- [Project roadmap]({{ '/roadmap/' | relative_url }})

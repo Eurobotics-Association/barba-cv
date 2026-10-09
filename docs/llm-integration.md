@@ -86,10 +86,10 @@ It may come from:
 
 ### 2. The Barba-CV example JSON
 
-Use the canonical template file:
+For 1.3 candidate output, use the versioned template file:
 
 ```text
-examples/barba-cv.example.json
+examples/barba-cv-1.3.template.json
 ```
 
 This shows the model exactly:
@@ -103,8 +103,8 @@ This shows the model exactly:
 
 Depending on the workflow, the model may also receive:
 
-* `schema/barba-cv.schema.json`
-* `docs/barba-cv-schema-reference.md`
+* `schema/barba-cv-1.3.schema.json`
+* `docs/field-reference.md`
 
 This improves field interpretation and reduces ambiguity.
 
@@ -119,7 +119,7 @@ A good Barba-CV instruction set should tell the model to:
 * avoid rewriting facts
 * avoid changing dates, figures, names, employers, schools, or locations
 * avoid inventing missing information
-* leave fields empty when information is not available
+* omit unknown optional fields, or leave a text field empty when the chosen template requires a placeholder
 * keep human-readable dates as they appear when needed
 * classify skills into the appropriate skill buckets when possible
 
@@ -197,7 +197,7 @@ Use the provided Barba-CV JSON template as the target structure.
 Populate the JSON only with information explicitly present in the text.
 Do not invent, rewrite, embellish, or normalize facts beyond what the source clearly states.
 Preserve dates, names, organizations, schools, titles, and figures.
-If a field is unknown, leave it empty.
+If an optional field is unknown, omit it; use an empty placeholder only when your template requires one.
 Return valid JSON only.
 ```
 
@@ -252,7 +252,7 @@ Provide:
 Validate the returned JSON against:
 
 ```text
-schema/barba-cv.schema.json
+schema/barba-cv-1.3.schema.json
 ```
 
 ### Step 5 — Post-process if needed
@@ -285,7 +285,7 @@ This is important because an LLM may still produce:
 * wrong data types
 * unexpected fields
 
-The schema acts as the final structural guardrail.
+The 1.3 candidate schema acts as the structural guardrail for 1.3 output. The published 1.2 schema has unresolved references and should not be treated as a working nested validator.
 
 ---
 
@@ -362,8 +362,8 @@ This is the core mechanism by which Barba-CV turns probabilistic AI extraction i
 
 ## Related documentation
 
-- [Documentation Hub](./index.md)
-- [Visual Overview](./visual-overview.md)
-- [Design Principles](./design-principles.md)
-- [LLM Integration](./llm-integration.md)
-- [AI Parsing Guidelines](./ai-parsing-guidelines.md)
+- [Documentation Hub]({{ '/docs/' | relative_url }})
+- [Visual Overview]({{ '/docs/visual-overview.html' | relative_url }})
+- [Design Principles]({{ '/docs/design-principles.html' | relative_url }})
+- [LLM Integration]({{ '/docs/llm-integration.html' | relative_url }})
+- [AI Parsing Guidelines]({{ '/docs/ai-parsing-guidelines.html' | relative_url }})

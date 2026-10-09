@@ -4,14 +4,13 @@ title: Specification
 permalink: /specification/
 ---
 
-Barba-CV defines a deterministic JSON structure for CV/resume data exchange across AI extraction workflows, ATS platforms, and HR systems.
+# Specification
 
-## Reference schema
+Barba-CV defines a JSON structure for CV data exchange across independent systems. Its 1.3 contract is currently a **candidate on `main`**, without a 1.3 release tag.
 
-- [`schema/barba-cv.schema.json`](../schema/barba-cv.schema.json)
+- [1.3 candidate schema]({{ '/schema/barba-cv-1.3.schema.json' | relative_url }})
+- [Field reference]({{ '/docs/field-reference/' | relative_url }})
+- [Compatibility and version history]({{ '/docs/compatibility/' | relative_url }})
+- [Archived 1.0 and published 1.2 artifacts]({{ '/history/' | relative_url }})
 
-## Scope
-
-The specification focuses on normalized resume data modeling (identity, profile, experience, education, skills, certifications, languages, and metadata) so payloads can be validated and exchanged reliably.
-
-This repository publishes the specification and examples. It does not provide a parser API or service layer.
+The unversioned `schema/barba-cv.schema.json` is the published 1.2 artifact with known incomplete definitions. Use the versioned 1.3 path for strict 1.3 checks.

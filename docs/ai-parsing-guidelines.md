@@ -10,7 +10,7 @@ This document explains how AI systems (LLMs, extraction pipelines, or parsing en
 
 Barba-CV is designed to act as the **deterministic structural layer** between probabilistic AI extraction and structured HR datasets.
 
-This page focuses on extraction and field-level mapping behavior, while [LLM Integration](./llm-integration.md) focuses on prompt packaging, orchestration, and schema-guided workflow design.
+This page focuses on extraction and field-level mapping behavior, while [LLM Integration]({{ '/docs/llm-integration.html' | relative_url }}) focuses on prompt packaging, orchestration, and schema-guided workflow design.
 
 ---
 
@@ -139,7 +139,7 @@ Skills should be categorized when possible:
 
 ```
 "skills": {
-  "it_skills": [],
+  "it_skills": [{"name": "Python"}],
   "hard_skills": [],
   "soft_skills": []
 }
@@ -153,7 +153,7 @@ Guidelines:
 | hard_skills | professional capabilities          |
 | soft_skills | interpersonal or behavioral skills |
 
-If classification is unclear, place the skill in `hard_skills`.
+For 1.3 output, each skill item is an object with a nonempty `name`. Add `level`, `category` or `keywords` only when supported by the source; see [skill objects]({{ '/docs/skills/' | relative_url }}). If bucket classification is unclear, record the ambiguity rather than asserting a category without evidence.
 
 ---
 
@@ -261,7 +261,7 @@ This prevents breaking the core schema.
 
 After extraction, the generated JSON should:
 
-1. validate against `barba-cv.schema.json`
+1. validate 1.3 output against `schema/barba-cv-1.3.schema.json`
 2. contain only supported fields
 3. respect the root CV structure
 
@@ -277,8 +277,8 @@ This ensures reliable CV parsing while keeping the schema compatible with real-w
 
 ## Related documentation
 
-- [Documentation Hub](./index.md)
-- [Visual Overview](./visual-overview.md)
-- [Design Principles](./design-principles.md)
-- [LLM Integration](./llm-integration.md)
-- [AI Parsing Guidelines](./ai-parsing-guidelines.md)
+- [Documentation Hub]({{ '/docs/' | relative_url }})
+- [Visual Overview]({{ '/docs/visual-overview.html' | relative_url }})
+- [Design Principles]({{ '/docs/design-principles.html' | relative_url }})
+- [LLM Integration]({{ '/docs/llm-integration.html' | relative_url }})
+- [AI Parsing Guidelines]({{ '/docs/ai-parsing-guidelines.html' | relative_url }})

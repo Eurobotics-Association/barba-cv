@@ -1,6 +1,8 @@
 title: Barba-CV
 description: Open-source deterministic JSON standard for structured CV and resume data, designed for AI parsing, ATS compatibility, and HR interoperability.
 theme: minima
+url: https://eurobotics-association.github.io
+baseurl: /barba-cv
 markdown: kramdown
 plugins:
   - jekyll-seo-tag

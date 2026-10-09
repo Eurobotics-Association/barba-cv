@@ -1,0 +1,522 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://eurobotics-association.github.io/barba-cv/schema/barba-cv-1.3.schema.json",
+  "title": "Barba-CV 1.3 candidate schema",
+  "description": "Proposed Barba-CV 1.3 payload contract. Not a tagged release. Only the version field is required.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "barba_cv_version"
+  ],
+  "properties": {
+    "barba_cv_version": {
+      "const": "1.3"
+    },
+    "personal_info": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "first_name": {
+          "type": "string"
+        },
+        "middle_name": {
+          "type": "string"
+        },
+        "last_name": {
+          "type": "string"
+        },
+        "date_of_birth": {
+          "type": "string"
+        },
+        "driving_licenses": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "address": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "street": {
+              "type": "string"
+            },
+            "street2": {
+              "type": "string"
+            },
+            "postal_code": {
+              "type": "string"
+            },
+            "city": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            }
+          }
+        },
+        "contact": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "email": {
+              "type": "string"
+            },
+            "phone": {
+              "type": "string"
+            }
+          }
+        },
+        "links": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "linkedin": {
+              "type": "string"
+            },
+            "github": {
+              "type": "string"
+            },
+            "website": {
+              "type": "string"
+            },
+            "twitter": {
+              "type": "string"
+            },
+            "instagram": {
+              "type": "string"
+            },
+            "facebook": {
+              "type": "string"
+            },
+            "other_socials": {
+              "type": "array",
+              "description": "Legacy open list. Item shape is not standardized in 1.3; preserve existing entries."
+            }
+          },
+          "description": "Social links as supplied; do not fabricate URLs."
+        }
+      }
+    },
+    "profile_summary": {
+      "type": "string"
+    },
+    "position_sought": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "experiences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "organization": {
+            "type": "string"
+          },
+          "role_title": {
+            "type": "string"
+          },
+          "location": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "city": {
+                "type": "string"
+              },
+              "country": {
+                "type": "string"
+              }
+            },
+            "description": "Human-readable city and country; omit unknown parts."
+          },
+          "start_date": {
+            "type": "string"
+          },
+          "end_date": {
+            "type": "string"
+          },
+          "website": {
+            "type": "string"
+          },
+          "logo": {
+            "type": "string"
+          },
+          "tasks": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "achievements": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "education": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "school": {
+            "type": "string"
+          },
+          "degree": {
+            "type": "string"
+          },
+          "field": {
+            "type": "string"
+          },
+          "start_date": {
+            "type": "string"
+          },
+          "end_date": {
+            "type": "string"
+          },
+          "website": {
+            "type": "string"
+          },
+          "logo": {
+            "type": "string"
+          },
+          "school_location": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "city": {
+                "type": "string"
+              },
+              "country": {
+                "type": "string"
+              }
+            },
+            "description": "Human-readable city and country; omit unknown parts."
+          }
+        }
+      }
+    },
+    "skills": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "it_skills": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Skill label faithfully extracted from the source."
+              },
+              "level": {
+                "type": "string",
+                "description": "Source-backed human-readable proficiency; no required scale."
+              },
+              "category": {
+                "type": "string",
+                "description": "Optional source-backed grouping more specific than the outer bucket; no required taxonomy."
+              },
+              "keywords": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Source-backed search terms or related labels; not inferred aliases."
+              }
+            },
+            "description": "A skill object; name-only objects are valid.",
+            "required": [
+              "name"
+            ]
+          }
+        },
+        "hard_skills": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Skill label faithfully extracted from the source."
+              },
+              "level": {
+                "type": "string",
+                "description": "Source-backed human-readable proficiency; no required scale."
+              },
+              "category": {
+                "type": "string",
+                "description": "Optional source-backed grouping more specific than the outer bucket; no required taxonomy."
+              },
+              "keywords": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Source-backed search terms or related labels; not inferred aliases."
+              }
+            },
+            "description": "A skill object; name-only objects are valid.",
+            "required": [
+              "name"
+            ]
+          }
+        },
+        "soft_skills": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Skill label faithfully extracted from the source."
+              },
+              "level": {
+                "type": "string",
+                "description": "Source-backed human-readable proficiency; no required scale."
+              },
+              "category": {
+                "type": "string",
+                "description": "Optional source-backed grouping more specific than the outer bucket; no required taxonomy."
+              },
+              "keywords": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Source-backed search terms or related labels; not inferred aliases."
+              }
+            },
+            "description": "A skill object; name-only objects are valid.",
+            "required": [
+              "name"
+            ]
+          }
+        }
+      },
+      "description": "Three historical skill buckets. Do not infer metadata absent from the source."
+    },
+    "certifications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "issuer": {
+            "type": "string"
+          },
+          "date_obtained": {
+            "type": "string"
+          },
+          "expiry_date": {
+            "type": "string"
+          },
+          "credential_id": {
+            "type": "string"
+          },
+          "credential_url": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "languages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "language": {
+            "type": "string"
+          },
+          "level": {
+            "type": "string"
+          },
+          "certificates": {
+            "type": "array",
+            "description": "Open legacy list; certificate item shape is not standardized in 1.3."
+          }
+        }
+      }
+    },
+    "interests": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "project_achievements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "service_type": {
+            "type": "string"
+          },
+          "client": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "period": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "start": {
+                "type": "string"
+              },
+              "end": {
+                "type": "string"
+              }
+            },
+            "description": "Human-readable period endpoints; do not infer dates."
+          },
+          "role": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "sectors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "competencies": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "keywords": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "description": {
+            "type": "string"
+          },
+          "synonyms": {
+            "type": "object",
+            "additionalProperties": true,
+            "description": "Optional source-backed synonym data. Internal keys and values are not standardized in 1.3; preserve unchanged."
+          }
+        }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "cv_uuid": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cv_title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "parsing_errors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "ats_processed": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "processor_engine": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "parsed_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_original_text": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_ats_revised_text": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "original_filename": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_format": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ingested_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "embedded_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "extraction_confidence_overall": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "description": "Processing metadata, not biographical content."
+    },
+    "extensions": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "Optional adopter-specific data. Unknown values are not core-standard semantics and should be preserved by pass-through readers."
+    }
+  }
+}
