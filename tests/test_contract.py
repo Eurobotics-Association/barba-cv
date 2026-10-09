@@ -27,6 +27,23 @@ class ContractTests(unittest.TestCase):
             data = json.loads((ROOT / 'examples' / name).read_text())
             self.assertEqual(strict_errors(data), [], name)
 
+    def test_field_reference_examples(self):
+        import re
+        schema = json.loads((ROOT / 'schema/barba-cv-1.3.schema.json').read_text())
+        reference = (ROOT / 'docs/field-reference.md').read_text()
+        rows = re.findall(r'^\| \x60([^\x60]+)\x60 \| [^|]+ \| \x60(.*?)\x60 \|', reference, re.M)
+        self.assertGreater(len(rows), 100)
+        for path, raw in rows:
+            node = schema
+            for part in path.split('.'):
+                is_item = part.endswith('[]')
+                key = part[:-2] if is_item else part
+                node = node['properties'][key]
+                if is_item:
+                    node = node['items']
+            value = json.loads(raw)
+            self.assertEqual(list(Draft202012Validator(node).iter_errors(value)), [], path)
+
     def test_skills_and_extensions(self):
         item = {'barba_cv_version': '1.3', 'skills': {'it_skills': [{'name': 'Python'}]},
                 'extensions': {'vendor.example': {'unknown': [1, None, True]}}}
