@@ -1,0 +1,47 @@
+{
+  "barba_cv_version": "1.3",
+  "personal_info": {
+    "first_name": "",
+    "middle_name": "",
+    "last_name": "",
+    "date_of_birth": "",
+    "driving_licenses": [],
+    "address": {
+      "street": "",
+      "street2": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "contact": {
+      "email": "",
+      "phone": ""
+    },
+    "links": {
+      "linkedin": "",
+      "github": "",
+      "website": "",
+      "twitter": "",
+      "instagram": "",
+      "facebook": "",
+      "other_socials": []
+    }
+  },
+  "profile_summary": "",
+  "position_sought": [],
+  "experiences": [],
+  "education": [],
+  "skills": {
+    "it_skills": [],
+    "hard_skills": [],
+    "soft_skills": []
+  },
+  "certifications": [],
+  "languages": [],
+  "interests": [],
+  "project_achievements": [],
+  "meta": {
+    "parsing_errors": []
+  },
+  "extensions": {}
+}

@@ -1,0 +1,7 @@
+---
+layout: default
+---
+<article class="document-page shell">
+  {% unless content contains '<h1' %}<h1>{{ page.title | escape }}</h1>{% endunless %}
+  {{ content }}
+</article>

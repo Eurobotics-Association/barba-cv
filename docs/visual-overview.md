@@ -54,8 +54,8 @@ Barba-CV enables:
 
 ## Related documentation
 
-- [Documentation Hub](./index.md)
-- [Visual Overview](./visual-overview.md)
-- [Design Principles](./design-principles.md)
-- [LLM Integration](./llm-integration.md)
-- [AI Parsing Guidelines](./ai-parsing-guidelines.md)
+- [Documentation Hub]({{ '/docs/' | relative_url }})
+- [Visual Overview]({{ '/docs/visual-overview.html' | relative_url }})
+- [Design Principles]({{ '/docs/design-principles.html' | relative_url }})
+- [LLM Integration]({{ '/docs/llm-integration.html' | relative_url }})
+- [AI Parsing Guidelines]({{ '/docs/ai-parsing-guidelines.html' | relative_url }})

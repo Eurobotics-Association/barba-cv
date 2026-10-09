@@ -4,11 +4,20 @@ title: Examples
 permalink: /examples/
 ---
 
-The repository includes representative Barba-CV JSON payloads for different CV profiles.
+# Examples
 
-- [`barba-cv.template.json`](./barba-cv.template.json) — Minimal template showing the target structure and field organization.
-- [`Clara_Delaunay_International_Internship_20260316.json`](./Clara_Delaunay_International_Internship_20260316.json) — Internship-oriented profile with academic trajectory and multilingual details.
-- [`Marc_Valentin_Customer_Service_Manager_20260316.json`](./Marc_Valentin_Customer_Service_Manager_20260316.json) — Customer-service management profile with operational and leadership experience.
-- [`Nassim_Karoubi_Business_Development_Internship_20260316.json`](./Nassim_Karoubi_Business_Development_Internship_20260316.json) — Business-development internship profile with sales and growth-oriented positioning.
+## 1.3 candidate
 
-Use these examples as mapping references when generating or validating Barba-CV payloads.
+- [Minimal section template](./barba-cv-1.3.template.json) — empty sections and arrays; placeholders are optional.
+- [Fictional populated example](./barba-cv-1.3.example.json) — name-only and enriched skill objects, structured projects, and an extension.
+
+Validate these against the [1.3 candidate schema]({{ '/schema/barba-cv-1.3.schema.json' | relative_url }}). The [getting-started guide]({{ '/docs/getting-started/' | relative_url }}) explains the contract.
+
+## Earlier repository examples
+
+These demonstrate observed 1.2-era payload shapes; they are **not** certified by the defective published 1.2 schema and are not automatically 1.3-conformant.
+
+- [1.2 template](./barba-cv.template.json)
+- [Clara Delaunay](./Clara_Delaunay_International_Internship_20260316.json)
+- [Marc Valentin](./Marc_Valentin_Customer_Service_Manager_20260316.json)
+- [Nassim Karoubi](./Nassim_Karoubi_Business_Development_Internship_20260316.json)

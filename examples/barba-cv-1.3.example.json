@@ -1,0 +1,81 @@
+{
+  "barba_cv_version": "1.3",
+  "personal_info": {
+    "first_name": "Alex",
+    "last_name": "Rivera",
+    "contact": {
+      "email": "alex@example.org"
+    }
+  },
+  "profile_summary": "Builds accessible web tools and documents implementation choices.",
+  "experiences": [
+    {
+      "organization": "Example Cooperative",
+      "role_title": "Software engineer",
+      "start_date": "2021",
+      "tasks": [
+        "Built accessible interfaces."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "Example College",
+      "degree": "Diploma",
+      "school_location": {
+        "city": "Sample City",
+        "country": "Exampleland"
+      }
+    }
+  ],
+  "skills": {
+    "it_skills": [
+      {
+        "name": "Python",
+        "level": "Advanced",
+        "category": "Programming languages",
+        "keywords": [
+          "automation"
+        ]
+      },
+      {
+        "name": "SQL"
+      }
+    ],
+    "hard_skills": [
+      {
+        "name": "Technical writing"
+      }
+    ],
+    "soft_skills": [
+      {
+        "name": "Mentoring"
+      }
+    ]
+  },
+  "project_achievements": [
+    {
+      "title": "Public data guide",
+      "period": {
+        "start": "2022",
+        "end": "2023"
+      },
+      "role": [
+        "Author"
+      ],
+      "sectors": [
+        "Education"
+      ],
+      "competencies": [
+        "Technical writing"
+      ],
+      "keywords": [
+        "documentation"
+      ],
+      "description": "Created a practical guide."
+    }
+  ],
+  "extensions": {
+    "example.org.reference": "DEMO-001"
+  }
+}

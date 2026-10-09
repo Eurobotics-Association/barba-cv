@@ -1,3 +1,8 @@
+---
+title: Project genesis
+layout: page
+---
+
 # Genesis of the Barba-CV project
 
 Barba-CV emerged from recurring operational issues observed in HR and consulting environments where CV processing had to be done at scale.

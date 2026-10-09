@@ -6,6 +6,8 @@ Barba-CV is an **open-source specification** (not a parser service) that defines
 
 CV data is inherently heterogeneous—often incomplete, inconsistently structured, and partially normalized. The Barba-CV schema therefore enforces deterministic structure while preserving semantic flexibility, allowing real-world CV data to be represented without unrealistic constraints.
 
+**Version status:** The 1.3 candidate contract, schema and example are on `main` for review; no 1.3 release tag has been issued. The original 1.0 template and published 1.2 files are [preserved with provenance](history/README.md). The published 1.2 schema has unresolved references; use the [versioned 1.3 schema](schema/barba-cv-1.3.schema.json) for strict 1.3 checks.
+
 ## Documentation
 
 Full documentation is available at:
@@ -175,7 +177,15 @@ This supports use cases like structured search, candidate analytics, machine lea
 
 ## Quick navigation
 
-- **Schema:** [`schema/barba-cv.schema.json`](schema/barba-cv.schema.json)
+- **Get started:** [`docs/getting-started.md`](docs/getting-started.md)
+- **Field reference:** [`docs/field-reference.md`](docs/field-reference.md)
+- **Skills:** [`docs/skills.md`](docs/skills.md)
+- **Compatibility:** [`docs/compatibility.md`](docs/compatibility.md)
+- **1.3 schema:** [`schema/barba-cv-1.3.schema.json`](schema/barba-cv-1.3.schema.json)
+- **1.3 example:** [`examples/barba-cv-1.3.example.json`](examples/barba-cv-1.3.example.json)
+
+
+- **Published 1.2 schema (known defects):** [`schema/barba-cv.schema.json`](schema/barba-cv.schema.json)
 - **Examples:** [`examples/`](examples)
 - **Design principles:** [`docs/design-principles.md`](docs/design-principles.md)
 - **AI mapping guidance:** [`docs/ai-parsing-guidelines.md`](docs/ai-parsing-guidelines.md)
