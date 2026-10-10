@@ -29,19 +29,19 @@ def diagnostics(data):
         observations.append('missing version declaration does not prove 1.0')
     elif declared not in ('1.2', '1.3'):
         observations.append(f'unsupported declared version: {declared!r}')
-    candidates = {'1.0 template shape', '1.2 template shape', '1.2 examples shape', '1.3 candidate shape'}
+    candidates = {'1.0 template shape', '1.2 template shape', '1.2 examples shape', '1.3 release shape'}
     if declared is not None:
         candidates.discard('1.0 template shape')
     if declared == '1.3':
         candidates.discard('1.2 template shape')
         candidates.discard('1.2 examples shape')
     if declared == '1.2':
-        candidates.discard('1.3 candidate shape')
+        candidates.discard('1.3 release shape')
     if 'Middle_name' in data.get('personal_info', {}):
-        candidates -= {'1.2 template shape', '1.2 examples shape', '1.3 candidate shape'}
+        candidates -= {'1.2 template shape', '1.2 examples shape', '1.3 release shape'}
         observations.append('personal_info.Middle_name is a 1.0 spelling')
     if 'parsing_errors' in data:
-        candidates -= {'1.2 template shape', '1.2 examples shape', '1.3 candidate shape'}
+        candidates -= {'1.2 template shape', '1.2 examples shape', '1.3 release shape'}
         observations.append('root parsing_errors is a 1.0 placement')
     for i, entry in enumerate(data.get('education', []) if isinstance(data.get('education', []), list) else []):
         if not isinstance(entry, dict):
@@ -49,7 +49,7 @@ def diagnostics(data):
             continue
         loc = entry.get('school_location')
         if isinstance(loc, str):
-            candidates -= {'1.2 template shape', '1.2 examples shape', '1.3 candidate shape'}
+            candidates -= {'1.2 template shape', '1.2 examples shape', '1.3 release shape'}
             observations.append(f'education[{i}].school_location is legacy text; splitting may lose meaning')
         elif isinstance(loc, dict):
             candidates.discard('1.0 template shape')
@@ -62,7 +62,7 @@ def diagnostics(data):
                 continue
             for i, item in enumerate(items):
                 if isinstance(item, str):
-                    candidates -= {'1.2 template shape', '1.3 candidate shape'}
+                    candidates -= {'1.2 template shape', '1.3 release shape'}
                     observations.append(f'skills.{bucket}[{i}] is a legacy string; explicit name-only mapping is lossless')
                 elif isinstance(item, dict):
                     candidates.discard('1.2 examples shape')
@@ -71,7 +71,7 @@ def diagnostics(data):
     for key in ('project_achievements', 'projects_achievements_extracts'):
         projects = data.get(key, [])
         if key == 'projects_achievements_extracts' and key in data:
-            candidates -= {'1.2 template shape', '1.2 examples shape', '1.3 candidate shape'}
+            candidates -= {'1.2 template shape', '1.2 examples shape', '1.3 release shape'}
             observations.append('projects_achievements_extracts is a 1.0 key')
         if not isinstance(projects, list):
             continue
@@ -80,7 +80,7 @@ def diagnostics(data):
                 continue
             period = item.get('period')
             if isinstance(period, str):
-                candidates -= {'1.0 template shape', '1.2 examples shape', '1.3 candidate shape'}
+                candidates -= {'1.0 template shape', '1.2 examples shape', '1.3 release shape'}
                 observations.append(f'{key}[{i}].period is free text; splitting may be ambiguous')
             elif isinstance(period, dict):
                 candidates.discard('1.2 template shape')
@@ -92,7 +92,7 @@ def diagnostics(data):
                 observations.append('X/twitter and twitter coexist: alias conflict requires review')
     errors = strict_errors(data)
     if errors:
-        candidates.discard('1.3 candidate shape')
+        candidates.discard('1.3 release shape')
     if not candidates:
         observations.append('no known shape fits observed clues; historical checks are incomplete')
     return {'declared_version': declared, 'strict_1_3_valid': not errors,
@@ -119,7 +119,7 @@ def main():
         for e in errors:
             print(f"/{'/'.join(map(str, e.absolute_path))}: {e.message}", file=sys.stderr)
         return 1
-    print('Valid Barba-CV 1.3 candidate payload')
+    print('Valid Barba-CV 1.3 payload')
     return 0
 
 

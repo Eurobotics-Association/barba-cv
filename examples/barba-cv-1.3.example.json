@@ -75,6 +75,25 @@
       "description": "Created a practical guide."
     }
   ],
+  "certifications": [
+    {
+      "name": "Example Accessibility Certificate",
+      "issuer": "Example Institute",
+      "date_obtained": "2023"
+    }
+  ],
+  "interests": [
+    "Cycling"
+  ],
+  "meta": {
+    "cv_uuid": "demo-001",
+    "cv_title": "Alex Rivera Software Engineer CV",
+    "content_language": "en",
+    "parsing_errors": [],
+    "processor_engine": "example-parser 1.0",
+    "parsed_at": "2026-10-10T09:00:00Z",
+    "original_filename": "alex-rivera-source.pdf"
+  },
   "extensions": {
     "example.org.reference": "DEMO-001"
   }

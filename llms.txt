@@ -1,4 +1,4 @@
-Barba-CV
+Barba-CV v1.3 — latest release 2026-10-10
 
 Open JSON standard for structured CV / resume data.
 
@@ -6,7 +6,7 @@ Specification:
 https://eurobotics-association.github.io/barba-cv/specification/
 
 Schema:
-https://github.com/Eurobotics-Association/barba-cv/schema/barba-cv.schema.json
+https://github.com/Eurobotics-Association/barba-cv/blob/main/schema/barba-cv-1.3.schema.json
 
 Documentation:
 https://eurobotics-association.github.io/barba-cv/docs/

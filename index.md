@@ -7,7 +7,7 @@ description: Barba-CV is an open JSON standard for structured, portable CV data 
 <div class="hero">
   <div class="shell hero-grid">
     <div class="hero-copy">
-      <span class="eyebrow"><span class="status-dot"></span> Open standard · 1.3 candidate</span>
+      <span class="eyebrow"><span class="status-dot"></span> Open standard · v1.3 released 2026-10-10</span>
       <h1>CV data that<br><em>moves with meaning.</em></h1>
       <p class="hero-lead">A clear JSON structure for resumes and CVs. Preserve what the source says, make it machine readable, and exchange it across tools.</p>
       <div class="hero-actions">
@@ -56,4 +56,4 @@ description: Barba-CV is an open JSON standard for structured, portable CV data 
     <a class="doc-card" href="{{ '/docs/compatibility/' | relative_url }}"><span>04 / VERSIONS</span><h3>Compatibility</h3><p>Read historical shapes without silently discarding detail.</p><b aria-hidden="true">↗</b></a>
   </div>
 </div></section>
-<section class="section shell version-section"><div><span class="section-kicker">VERSION STATUS</span><h2>Clear history. Careful evolution.</h2><p>1.0 and published 1.2 originals are preserved byte-for-byte. The 1.3 candidate has its own schema, examples, and guidance. No 1.3 release tag has been issued.</p></div><div class="version-actions"><a class="button button-dark" href="{{ '/schema/barba-cv-1.3.schema.json' | relative_url }}">View 1.3 schema <span aria-hidden="true">↗</span></a><a class="text-link" href="{{ '/history/' | relative_url }}">Browse version history <span aria-hidden="true">→</span></a></div></section>
+<section class="section shell version-section"><div><span class="section-kicker">VERSION STATUS</span><h2>Clear history. Careful evolution.</h2><p>Latest release: <strong>Barba-CV v1.3 · 2026-10-10</strong>. The versioned schema, examples, and field guidance are available here. The 1.0 and published 1.2 originals remain preserved byte-for-byte.</p></div><div class="version-actions"><a class="button button-dark" href="{{ '/schema/barba-cv-1.3.schema.json' | relative_url }}">View 1.3 schema <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/Eurobotics-Association/barba-cv/releases/tag/v1.3">Read release notes <span aria-hidden="true">→</span></a></div></section>

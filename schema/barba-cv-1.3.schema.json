@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://eurobotics-association.github.io/barba-cv/schema/barba-cv-1.3.schema.json",
-  "title": "Barba-CV 1.3 candidate schema",
-  "description": "Proposed Barba-CV 1.3 payload contract. Not a tagged release. Only the version field is required.",
+  "title": "Barba-CV 1.3 schema",
+  "description": "Barba-CV 1.3 payload contract. Only barba_cv_version is required at the root; other fields are optional unless a nested requirement is stated.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -10,102 +10,126 @@
   ],
   "properties": {
     "barba_cv_version": {
-      "const": "1.3"
+      "const": "1.3",
+      "description": "Exact payload format declaration."
     },
     "personal_info": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
         "first_name": {
-          "type": "string"
+          "type": "string",
+          "description": "Given name."
         },
         "middle_name": {
-          "type": "string"
+          "type": "string",
+          "description": "Middle name; renamed from 1.0 `Middle_name`."
         },
         "last_name": {
-          "type": "string"
+          "type": "string",
+          "description": "Family name."
         },
         "date_of_birth": {
-          "type": "string"
+          "type": "string",
+          "description": "Birth date as supplied; no date format required."
         },
         "driving_licenses": {
           "type": "array",
           "items": {
             "type": "string"
-          }
+          },
+          "description": "Licences stated by the source."
         },
         "address": {
           "type": "object",
           "additionalProperties": false,
           "properties": {
             "street": {
-              "type": "string"
+              "type": "string",
+              "description": "Street address line."
             },
             "street2": {
-              "type": "string"
+              "type": "string",
+              "description": "Optional second address line; restored from 1.0."
             },
             "postal_code": {
-              "type": "string"
+              "type": "string",
+              "description": "Postal code as text; no country format required."
             },
             "city": {
-              "type": "string"
+              "type": "string",
+              "description": "Address city."
             },
             "country": {
-              "type": "string"
+              "type": "string",
+              "description": "Address country."
             }
-          }
+          },
+          "description": "Address."
         },
         "contact": {
           "type": "object",
           "additionalProperties": false,
           "properties": {
             "email": {
-              "type": "string"
+              "type": "string",
+              "description": "Email address as supplied."
             },
             "phone": {
-              "type": "string"
+              "type": "string",
+              "description": "Telephone number as supplied."
             }
-          }
+          },
+          "description": "Contact."
         },
         "links": {
           "type": "object",
           "additionalProperties": false,
           "properties": {
             "linkedin": {
-              "type": "string"
+              "type": "string",
+              "description": "LinkedIn link."
             },
             "github": {
-              "type": "string"
+              "type": "string",
+              "description": "GitHub link."
             },
             "website": {
-              "type": "string"
+              "type": "string",
+              "description": "Personal website."
             },
             "twitter": {
-              "type": "string"
+              "type": "string",
+              "description": "X/Twitter link; canonical name since 1.2."
             },
             "instagram": {
-              "type": "string"
+              "type": "string",
+              "description": "Instagram link; restored from 1.0."
             },
             "facebook": {
-              "type": "string"
+              "type": "string",
+              "description": "Facebook link; restored from 1.0."
             },
             "other_socials": {
               "type": "array",
-              "description": "Legacy open list. Item shape is not standardized in 1.3; preserve existing entries."
+              "description": "Legacy list of other social links; item shape remains unspecified."
             }
           },
           "description": "Social links as supplied; do not fabricate URLs."
         }
-      }
+      },
+      "description": "Candidate identity and contact details."
     },
     "profile_summary": {
-      "type": "string"
+      "type": "string",
+      "description": "Source-backed summary, in human wording."
     },
     "position_sought": {
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "description": "Desired roles or positioning statements."
     },
     "experiences": {
       "type": "array",
@@ -114,50 +138,62 @@
         "additionalProperties": false,
         "properties": {
           "organization": {
-            "type": "string"
+            "type": "string",
+            "description": "Employer or organization name."
           },
           "role_title": {
-            "type": "string"
+            "type": "string",
+            "description": "Role or job title."
           },
           "location": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
               "city": {
-                "type": "string"
+                "type": "string",
+                "description": "Work city."
               },
               "country": {
-                "type": "string"
+                "type": "string",
+                "description": "Work country."
               }
             },
-            "description": "Human-readable city and country; omit unknown parts."
+            "description": "Work location when structured parts are known."
           },
           "start_date": {
-            "type": "string"
+            "type": "string",
+            "description": "Start wording from the source."
           },
           "end_date": {
-            "type": "string"
+            "type": "string",
+            "description": "End wording from the source."
           },
           "website": {
-            "type": "string"
+            "type": "string",
+            "description": "Organization or role website."
           },
           "logo": {
-            "type": "string"
+            "type": "string",
+            "description": "Logo reference if supplied."
           },
           "tasks": {
             "type": "array",
             "items": {
               "type": "string"
-            }
+            },
+            "description": "Responsibilities or tasks, one text item each."
           },
           "achievements": {
             "type": "array",
             "items": {
               "type": "string"
-            }
+            },
+            "description": "Achievement statements, one text item each."
           }
-        }
-      }
+        },
+        "description": "One professional experience entry; include only details supported by the source CV."
+      },
+      "description": "Professional experience entries."
     },
     "education": {
       "type": "array",
@@ -166,41 +202,52 @@
         "additionalProperties": false,
         "properties": {
           "school": {
-            "type": "string"
+            "type": "string",
+            "description": "School or institution."
           },
           "degree": {
-            "type": "string"
+            "type": "string",
+            "description": "Qualification or degree."
           },
           "field": {
-            "type": "string"
+            "type": "string",
+            "description": "Field of study."
           },
           "start_date": {
-            "type": "string"
+            "type": "string",
+            "description": "Start wording from the source."
           },
           "end_date": {
-            "type": "string"
+            "type": "string",
+            "description": "End wording from the source."
           },
           "website": {
-            "type": "string"
+            "type": "string",
+            "description": "Institution website."
           },
           "logo": {
-            "type": "string"
+            "type": "string",
+            "description": "Logo reference if supplied."
           },
           "school_location": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
               "city": {
-                "type": "string"
+                "type": "string",
+                "description": "School city."
               },
               "country": {
-                "type": "string"
+                "type": "string",
+                "description": "School country."
               }
             },
-            "description": "Human-readable city and country; omit unknown parts."
+            "description": "City/country object; older text cannot always be split."
           }
-        }
-      }
+        },
+        "description": "One education entry; preserve the institution and qualification wording supplied by the source."
+      },
+      "description": "Education entries."
     },
     "skills": {
       "type": "object",
@@ -215,29 +262,30 @@
               "name": {
                 "type": "string",
                 "minLength": 1,
-                "description": "Skill label faithfully extracted from the source."
+                "description": "Nonempty source skill label; required when item exists."
               },
               "level": {
                 "type": "string",
-                "description": "Source-backed human-readable proficiency; no required scale."
+                "description": "Source-backed human-readable proficiency; no fixed scale."
               },
               "category": {
                 "type": "string",
-                "description": "Optional source-backed grouping more specific than the outer bucket; no required taxonomy."
+                "description": "Source-backed subcategory within the outer bucket."
               },
               "keywords": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 },
-                "description": "Source-backed search terms or related labels; not inferred aliases."
+                "description": "Source-backed related terms; no inferred aliases."
               }
             },
-            "description": "A skill object; name-only objects are valid.",
+            "description": "Skill object; simple entries need only `name`.",
             "required": [
               "name"
             ]
-          }
+          },
+          "description": "IT-related skills."
         },
         "hard_skills": {
           "type": "array",
@@ -248,29 +296,30 @@
               "name": {
                 "type": "string",
                 "minLength": 1,
-                "description": "Skill label faithfully extracted from the source."
+                "description": "Nonempty source skill label; required when item exists."
               },
               "level": {
                 "type": "string",
-                "description": "Source-backed human-readable proficiency; no required scale."
+                "description": "Source-backed human-readable proficiency; no fixed scale."
               },
               "category": {
                 "type": "string",
-                "description": "Optional source-backed grouping more specific than the outer bucket; no required taxonomy."
+                "description": "Source-backed subcategory within the outer bucket."
               },
               "keywords": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 },
-                "description": "Source-backed search terms or related labels; not inferred aliases."
+                "description": "Source-backed related terms; no inferred aliases."
               }
             },
-            "description": "A skill object; name-only objects are valid.",
+            "description": "Skill object; simple entries need only `name`.",
             "required": [
               "name"
             ]
-          }
+          },
+          "description": "Other technical or domain skills."
         },
         "soft_skills": {
           "type": "array",
@@ -281,32 +330,33 @@
               "name": {
                 "type": "string",
                 "minLength": 1,
-                "description": "Skill label faithfully extracted from the source."
+                "description": "Nonempty source skill label; required when item exists."
               },
               "level": {
                 "type": "string",
-                "description": "Source-backed human-readable proficiency; no required scale."
+                "description": "Source-backed human-readable proficiency; no fixed scale."
               },
               "category": {
                 "type": "string",
-                "description": "Optional source-backed grouping more specific than the outer bucket; no required taxonomy."
+                "description": "Source-backed subcategory within the outer bucket."
               },
               "keywords": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 },
-                "description": "Source-backed search terms or related labels; not inferred aliases."
+                "description": "Source-backed related terms; no inferred aliases."
               }
             },
-            "description": "A skill object; name-only objects are valid.",
+            "description": "Skill object; simple entries need only `name`.",
             "required": [
               "name"
             ]
-          }
+          },
+          "description": "Interpersonal or transferable skills."
         }
       },
-      "description": "Three historical skill buckets. Do not infer metadata absent from the source."
+      "description": "Three established skill buckets."
     },
     "certifications": {
       "type": "array",
@@ -315,25 +365,33 @@
         "additionalProperties": false,
         "properties": {
           "name": {
-            "type": "string"
+            "type": "string",
+            "description": "Certification name."
           },
           "issuer": {
-            "type": "string"
+            "type": "string",
+            "description": "Issuing organization."
           },
           "date_obtained": {
-            "type": "string"
+            "type": "string",
+            "description": "Date wording from the source."
           },
           "expiry_date": {
-            "type": "string"
+            "type": "string",
+            "description": "Expiry wording from the source."
           },
           "credential_id": {
-            "type": "string"
+            "type": "string",
+            "description": "Credential identifier."
           },
           "credential_url": {
-            "type": "string"
+            "type": "string",
+            "description": "Credential URL."
           }
-        }
-      }
+        },
+        "description": "One certification or credential; fields may be absent when the source does not supply them."
+      },
+      "description": "Certifications or credentials stated in the source CV."
     },
     "languages": {
       "type": "array",
@@ -342,23 +400,28 @@
         "additionalProperties": false,
         "properties": {
           "language": {
-            "type": "string"
+            "type": "string",
+            "description": "Language name."
           },
           "level": {
-            "type": "string"
+            "type": "string",
+            "description": "Source-backed proficiency wording."
           },
           "certificates": {
             "type": "array",
-            "description": "Open legacy list; certificate item shape is not standardized in 1.3."
+            "description": "Legacy list of certificates; item shape remains unspecified."
           }
-        }
-      }
+        },
+        "description": "One language spoken by the person, with optional source-backed proficiency and certificates."
+      },
+      "description": "Language entries."
     },
     "interests": {
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "description": "Personal interests or activities stated in the source CV; remains a root section."
     },
     "project_achievements": {
       "type": "array",
@@ -367,64 +430,77 @@
         "additionalProperties": false,
         "properties": {
           "id": {
-            "type": "string"
+            "type": "string",
+            "description": "Project identifier if supplied."
           },
           "service_type": {
-            "type": "string"
+            "type": "string",
+            "description": "Service or work type."
           },
           "client": {
-            "type": "string"
+            "type": "string",
+            "description": "Client or beneficiary."
           },
           "title": {
-            "type": "string"
+            "type": "string",
+            "description": "Project title."
           },
           "period": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
               "start": {
-                "type": "string"
+                "type": "string",
+                "description": "Start wording."
               },
               "end": {
-                "type": "string"
+                "type": "string",
+                "description": "End wording."
               }
             },
-            "description": "Human-readable period endpoints; do not infer dates."
+            "description": "Human-readable start/end object; older free text may not split."
           },
           "role": {
             "type": "array",
             "items": {
               "type": "string"
-            }
+            },
+            "description": "One or more role labels."
           },
           "sectors": {
             "type": "array",
             "items": {
               "type": "string"
-            }
+            },
+            "description": "One or more sector labels."
           },
           "competencies": {
             "type": "array",
             "items": {
               "type": "string"
-            }
+            },
+            "description": "One or more competency labels."
           },
           "keywords": {
             "type": "array",
             "items": {
               "type": "string"
-            }
+            },
+            "description": "One or more source-backed terms."
           },
           "description": {
-            "type": "string"
+            "type": "string",
+            "description": "Project description."
           },
           "synonyms": {
             "type": "object",
             "additionalProperties": true,
-            "description": "Optional source-backed synonym data. Internal keys and values are not standardized in 1.3; preserve unchanged."
+            "description": "Optional open object; internal structure is not standardized. Preserve supplied data."
           }
-        }
-      }
+        },
+        "description": "One project or achievement entry described in the source CV."
+      },
+      "description": "Projects or achievements described in the CV."
     },
     "meta": {
       "type": "object",
@@ -434,73 +510,90 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "description": "System-assigned CV identifier, separate from the display title and original filename; UUID syntax is not currently enforced."
         },
         "cv_title": {
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "description": "User-facing title or label for this CV, supplied by a user or producer; separate from its original filename and system identifier."
+        },
+        "content_language": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Likely predominant language of human-readable CV values, preferably a BCP 47 language tag; may be user- or parser-declared. It does not assert that every field has that language or translate values. Omit if unknown."
         },
         "parsing_errors": {
           "type": "array",
           "items": {
             "type": "string"
-          }
+          },
+          "description": "Recorded extraction or mapping diagnostic messages; moved from the 1.0 root. Empty means no errors recorded, not guaranteed extraction accuracy."
         },
         "ats_processed": {
           "type": [
             "boolean",
             "null"
-          ]
+          ],
+          "description": "Whether ATS-oriented processing is known to have occurred."
         },
         "processor_engine": {
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "description": "Software or system that produced this structured CV, optionally including its version in the same value; this is the system parser/creator, not a human author."
         },
         "parsed_at": {
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "description": "Parse timestamp in source/system wording."
         },
         "source_original_text": {
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "description": "Original extracted text if retained."
         },
         "source_ats_revised_text": {
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "description": "ATS-oriented revised text if retained."
         },
         "original_filename": {
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "description": "Filename of the document parsed to create this CV data; not the user-facing CV title or system identifier."
         },
         "source_format": {
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "description": "Source file format."
         },
         "ingested_at": {
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "description": "Ingestion timestamp."
         },
         "embedded_at": {
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "description": "Embedding timestamp."
         },
         "extraction_confidence_overall": {
           "type": [
@@ -508,15 +601,16 @@
             "null"
           ],
           "minimum": 0,
-          "maximum": 1
+          "maximum": 1,
+          "description": "Optional numeric confidence from 0 to 1."
         }
       },
-      "description": "Processing metadata, not biographical content."
+      "description": "Processing provenance and diagnostics, not biographical facts."
     },
     "extensions": {
       "type": "object",
       "additionalProperties": true,
-      "description": "Optional adopter-specific data. Unknown values are not core-standard semantics and should be preserved by pass-through readers."
+      "description": "Adopter-specific data; unknown JSON values preserved on pass-through."
     }
   }
 }

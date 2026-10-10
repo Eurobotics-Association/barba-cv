@@ -2,12 +2,12 @@
 title: Get started with 1.3
 layout: page
 permalink: /docs/getting-started/
-description: Build and validate a Barba-CV 1.3 candidate JSON payload.
+description: Build and validate a Barba-CV 1.3 JSON payload.
 ---
 
 # Get started with Barba-CV 1.3
 
-**Status: candidate contract on `main`; no 1.3 release tag has been issued.** The [published 1.2 artifacts]({{ '/history/' | relative_url }}) remain available unchanged. The 1.3 files have stable versioned paths so a future release can use them without rewriting older files.
+**Latest release: [Barba-CV v1.3](https://github.com/Eurobotics-Association/barba-cv/releases/tag/v1.3), published 2026-10-10.** The [published 1.2 artifacts]({{ '/history/' | relative_url }}) remain available unchanged. Use the versioned 1.3 schema path for strict 1.3 validation.
 
 ## 1. Start small
 
@@ -50,3 +50,26 @@ Strict mode requires the exact `"1.3"` declaration. Diagnostic mode reports the 
 ## 4. Preserve source meaning
 
 Keep dates, names, levels and locations as supplied. Omit unknown fields rather than guessing. Empty text means a known field has no value recorded; `[]` is an explicitly empty list; `null` is allowed only where the schema lists it. `extensions` is optional adopter-specific data; preserve unknown extension values on pass-through. Do not place standard CV information there to avoid the common fields.
+
+## 5. Record optional processing context
+
+`meta.cv_title` is a user-facing label for this CV. It is separate from `meta.original_filename`, the name of the document parsed, and `meta.cv_uuid`, an identifier assigned by a system. `meta.processor_engine` identifies the software or system that produced the structured CV; it is also the system parser/creator field. If useful, include that software's version in the same value. These fields are optional.
+
+`meta.content_language` is the likely predominant language of the human-readable CV values. Prefer a language tag such as `en` or `en-GB`; omit it when unknown. It may reflect a user's declaration or a parser's assessment. It differs from root `languages`, which records languages spoken by the person. The hint does not guarantee that every field is in the same language and does not request translation.
+
+```json
+{
+  "barba_cv_version": "1.3",
+  "meta": {
+    "cv_uuid": "demo-001",
+    "cv_title": "Alex Rivera Software Engineer CV",
+    "content_language": "en",
+    "original_filename": "alex-rivera-source.pdf",
+    "processor_engine": "example-parser 1.0",
+    "parsed_at": "2026-10-10T09:00:00Z",
+    "parsing_errors": []
+  }
+}
+```
+
+`parsing_errors: []` means no diagnostics were recorded, not that extraction was proven perfect. The original 1.0 placement was at the root; 1.3 stores it under `meta`. Root `certifications` and `interests` remain available for ordinary CV content.

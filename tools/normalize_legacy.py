@@ -11,6 +11,21 @@ def normalize(data):
     report = []
     if not isinstance(out, dict):
         return out, ['root is not an object']
+    if 'parsing_errors' in out:
+        legacy_errors = out['parsing_errors']
+        meta = out.get('meta')
+        if meta is not None and not isinstance(meta, dict):
+            report.append('conflict: root parsing_errors cannot move because meta is not an object; retained source')
+        elif isinstance(meta, dict) and 'parsing_errors' in meta:
+            report.append('conflict: root and meta.parsing_errors coexist; retained both')
+        elif not isinstance(legacy_errors, list) or not all(isinstance(item, str) for item in legacy_errors):
+            report.append('root parsing_errors is not an array of text; retained source')
+        else:
+            if meta is None:
+                meta = {}
+                out['meta'] = meta
+            meta['parsing_errors'] = out.pop('parsing_errors')
+            report.append('mapped root parsing_errors to meta.parsing_errors')
     info = out.get('personal_info')
     if isinstance(info, dict):
         if 'Middle_name' in info:

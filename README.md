@@ -1,12 +1,14 @@
 # 🧾 Barba-CV
 
+**Latest release: [Barba-CV v1.3](https://github.com/Eurobotics-Association/barba-cv/releases/tag/v1.3) — 2026-10-10.** [Schema](schema/barba-cv-1.3.schema.json) · [Field reference](docs/field-reference.md) · [Changelog](CHANGELOG.md)
+
 > **Open, vendor-neutral JSON standard for deterministic, machine-readable CV/resume data.**
 
 Barba-CV is an **open-source specification** (not a parser service) that defines a normalized JSON format for CV/resume data so AI systems, ATSs, and HR software can exchange profiles reliably.
 
 CV data is inherently heterogeneous—often incomplete, inconsistently structured, and partially normalized. The Barba-CV schema therefore enforces deterministic structure while preserving semantic flexibility, allowing real-world CV data to be represented without unrealistic constraints.
 
-**Version status:** The 1.3 candidate contract, schema and example are on `main` for review; no 1.3 release tag has been issued. The original 1.0 template and published 1.2 files are [preserved with provenance](history/README.md). The published 1.2 schema has unresolved references; use the [versioned 1.3 schema](schema/barba-cv-1.3.schema.json) for strict 1.3 checks.
+The original 1.0 template and published 1.2 files are [preserved with provenance](history/README.md). The published 1.2 schema has unresolved references; use the versioned 1.3 schema for strict 1.3 validation.
 
 ## Documentation
 
@@ -181,7 +183,7 @@ This supports use cases like structured search, candidate analytics, machine lea
 - **Field reference:** [`docs/field-reference.md`](docs/field-reference.md)
 - **Skills:** [`docs/skills.md`](docs/skills.md)
 - **Compatibility:** [`docs/compatibility.md`](docs/compatibility.md)
-- **1.3 schema:** [`schema/barba-cv-1.3.schema.json`](schema/barba-cv-1.3.schema.json)
+- **Latest release (v1.3, 2026-10-10):** [`schema/barba-cv-1.3.schema.json`](schema/barba-cv-1.3.schema.json)
 - **1.3 example:** [`examples/barba-cv-1.3.example.json`](examples/barba-cv-1.3.example.json)
 
 
@@ -200,18 +202,25 @@ This supports use cases like structured search, candidate analytics, machine lea
 ```text
 barba-cv/
 ├── schema/
-│   └── barba-cv.schema.json
+│   ├── barba-cv-1.3.schema.json
+│   └── barba-cv.schema.json (historical 1.2)
 ├── examples/
-│   ├── barba-cv.template.json
-│   ├── Clara_Delaunay_International_Internship_20260316.json
-│   ├── Marc_Valentin_Customer_Service_Manager_20260316.json
-│   └── Nassim_Karoubi_Business_Development_Internship_20260316.json
+│   ├── barba-cv-1.3.example.json
+│   ├── barba-cv-1.3.template.json
+│   └── earlier examples and template
 ├── docs/
-│   ├── ai-parsing-guidelines.md
-│   ├── design-principles.md
-│   ├── genesis.md
-│   └── roadmap.md
+│   ├── field-reference.md
+│   ├── compatibility.md
+│   ├── getting-started.md
+│   └── other guides
+├── history/
+│   ├── 1.0/
+│   ├── 1.2/
+│   └── SHA256SUMS
+├── tests/
+├── tools/
 ├── logo/
+├── CHANGELOG.md
 ├── LICENSE
 └── README.md
 ```

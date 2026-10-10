@@ -6,12 +6,12 @@ permalink: /examples/
 
 # Examples
 
-## 1.3 candidate
+## 1.3 release
 
 - [Minimal section template](./barba-cv-1.3.template.json) — empty sections and arrays; placeholders are optional.
 - [Fictional populated example](./barba-cv-1.3.example.json) — name-only and enriched skill objects, structured projects, and an extension.
 
-Validate these against the [1.3 candidate schema]({{ '/schema/barba-cv-1.3.schema.json' | relative_url }}). The [getting-started guide]({{ '/docs/getting-started/' | relative_url }}) explains the contract.
+Validate these against the [1.3 schema]({{ '/schema/barba-cv-1.3.schema.json' | relative_url }}). The [getting-started guide]({{ '/docs/getting-started/' | relative_url }}) explains the contract.
 
 ## Earlier repository examples
 
