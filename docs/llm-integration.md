@@ -86,22 +86,22 @@ It may come from:
 
 ### 2. The Barba-CV example JSON
 
-For 1.3 candidate output, use the versioned template file:
+For 1.3 output, use the versioned template file:
 
 ```text
 examples/barba-cv-1.3.template.json
 ```
 
-This shows the model exactly:
+This shows the model:
 
-* which fields exist
+* common sections and example field placeholders
 * how arrays are structured
 * how nested objects are organized
 * what empty values look like
 
 ### 3. The Barba-CV schema and/or schema reference
 
-Depending on the workflow, the model may also receive:
+Depending on the workflow, the model may also receive the [versioned 1.3 schema]({{ '/schema/barba-cv-1.3.schema.json' | relative_url }}) and the [field reference]({{ '/docs/field-reference/' | relative_url }}). The field reference covers optional fields that the minimal template omits, including `meta.content_language`.
 
 * `schema/barba-cv-1.3.schema.json`
 * `docs/field-reference.md`
@@ -285,7 +285,7 @@ This is important because an LLM may still produce:
 * wrong data types
 * unexpected fields
 
-The 1.3 candidate schema acts as the structural guardrail for 1.3 output. The published 1.2 schema has unresolved references and should not be treated as a working nested validator.
+The 1.3 schema acts as the structural guardrail for 1.3 output. The published 1.2 schema has unresolved references and should not be treated as a working nested validator.
 
 ---
 

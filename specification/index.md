@@ -6,9 +6,9 @@ permalink: /specification/
 
 # Specification
 
-Barba-CV defines a JSON structure for CV data exchange across independent systems. Its 1.3 contract is currently a **candidate on `main`**, without a 1.3 release tag.
+Barba-CV defines a JSON structure for CV data exchange across independent systems. The latest release is **[v1.3](https://github.com/Eurobotics-Association/barba-cv/releases/tag/v1.3), published 2026-10-10**.
 
-- [1.3 candidate schema]({{ '/schema/barba-cv-1.3.schema.json' | relative_url }})
+- [1.3 schema]({{ '/schema/barba-cv-1.3.schema.json' | relative_url }})
 - [Field reference]({{ '/docs/field-reference/' | relative_url }})
 - [Compatibility and version history]({{ '/docs/compatibility/' | relative_url }})
 - [Archived 1.0 and published 1.2 artifacts]({{ '/history/' | relative_url }})

@@ -7,7 +7,7 @@ description: Guides, field reference, compatibility and background for the Barba
 
 # Documentation
 
-Barba-CV is an open JSON data standard for representing CV information. **1.3 is a candidate contract on `main`; no 1.3 release tag has been issued.** The original 1.0 template and published 1.2 artifacts remain in the [version archive]({{ '/history/' | relative_url }}).
+Barba-CV is an open JSON data standard for representing CV information. **Latest release: [Barba-CV v1.3](https://github.com/Eurobotics-Association/barba-cv/releases/tag/v1.3), published 2026-10-10.** The original 1.0 template and published 1.2 artifacts remain in the [version archive]({{ '/history/' | relative_url }}).
 
 ## Start building
 
@@ -15,7 +15,8 @@ Barba-CV is an open JSON data standard for representing CV information. **1.3 is
 - [1.3 field reference]({{ '/docs/field-reference/' | relative_url }}) — every defined field path and type.
 - [Skill objects]({{ '/docs/skills/' | relative_url }}) — name, level, category and keywords.
 - [Version and compatibility]({{ '/docs/compatibility/' | relative_url }}) — historical shapes and conversion caveats.
-- [1.3 candidate schema]({{ '/schema/barba-cv-1.3.schema.json' | relative_url }}) and [examples]({{ '/examples/' | relative_url }}).
+- [1.3 schema]({{ '/schema/barba-cv-1.3.schema.json' | relative_url }}) and [examples]({{ '/examples/' | relative_url }}).
+- [Changelog](https://github.com/Eurobotics-Association/barba-cv/blob/main/CHANGELOG.md) — dated release changes and links to release notes.
 
 ## Background
 
