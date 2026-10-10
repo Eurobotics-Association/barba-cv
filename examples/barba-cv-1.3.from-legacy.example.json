@@ -1,0 +1,166 @@
+{
+  "skills": {
+    "it_skills": [
+      {
+        "name": "Rust"
+      },
+      {
+        "name": "SQLite"
+      },
+      {
+        "name": "Accessibility testing"
+      }
+    ],
+    "hard_skills": [
+      {
+        "name": "Technical illustration"
+      },
+      {
+        "name": "Workshop facilitation"
+      }
+    ],
+    "soft_skills": [
+      {
+        "name": "Listening"
+      },
+      {
+        "name": "Mentoring"
+      }
+    ]
+  },
+  "education": [
+    {
+      "logo": "https://example.org/assets/example-college.png",
+      "field": "Information design",
+      "degree": "Diploma",
+      "school": "Example College",
+      "website": "https://example.org/college",
+      "end_date": "2018",
+      "start_date": "2016"
+    }
+  ],
+  "interests": [
+    "Cycling",
+    "Community gardening"
+  ],
+  "languages": [
+    {
+      "level": "Conversational",
+      "language": "Italian",
+      "certificates": []
+    },
+    {
+      "level": "Beginner",
+      "language": "Esperanto",
+      "certificates": []
+    }
+  ],
+  "experiences": [
+    {
+      "logo": "https://example.org/assets/cooperative.png",
+      "tasks": [
+        "Documented public service interfaces.",
+        "Ran accessibility reviews."
+      ],
+      "website": "https://example.org/cooperative",
+      "end_date": "Present",
+      "location": {
+        "city": "Sample City",
+        "country": "Exampleland"
+      },
+      "role_title": "Product documentation specialist",
+      "start_date": "2020",
+      "achievements": [
+        "Published a plain-language service guide."
+      ],
+      "organization": "Example Cooperative"
+    },
+    {
+      "logo": "https://example.org/assets/studio.png",
+      "tasks": [
+        "Prepared user research summaries."
+      ],
+      "website": "https://example.org/studio",
+      "end_date": "2020",
+      "location": {
+        "city": "Sample City",
+        "country": "Exampleland"
+      },
+      "role_title": "Information designer",
+      "start_date": "2018",
+      "achievements": [
+        "Created reusable document templates."
+      ],
+      "organization": "Example Design Studio"
+    }
+  ],
+  "personal_info": {
+    "links": {
+      "facebook": "https://example.org/social/facebook",
+      "linkedin": "https://example.org/social/linkedin",
+      "instagram": "https://example.org/social/instagram",
+      "other_socials": [],
+      "twitter": "https://example.org/social/twitter"
+    },
+    "address": {
+      "city": "Sample City",
+      "street": "1 Fictional Way",
+      "country": "Exampleland",
+      "street2": "",
+      "postal_code": "00000"
+    },
+    "contact": {
+      "email": "avery@example.org",
+      "phone": "+1 202-555-0104"
+    },
+    "last_name": "Example",
+    "first_name": "Avery",
+    "date_of_birth": "",
+    "driving_licenses": [
+      "C"
+    ],
+    "middle_name": ""
+  },
+  "certifications": [
+    {
+      "name": "Example Accessibility Certificate",
+      "issuer": "Example Institute",
+      "expiry_date": "2027",
+      "credential_id": "DEMO-123",
+      "date_obtained": "2023",
+      "credential_url": "https://example.org/credentials/demo-123"
+    }
+  ],
+  "profile_summary": "Information designer focused on clear public service documents and accessible interfaces.",
+  "meta": {
+    "parsing_errors": [
+      "Example parser could not classify an optional logo reference."
+    ]
+  },
+  "project_achievements": [
+    {
+      "id": "project-01",
+      "role": [
+        "Author"
+      ],
+      "title": "Public guide prototype",
+      "client": "Example Cooperative",
+      "period": {
+        "end": "2023",
+        "start": "2020"
+      },
+      "sectors": [
+        "Public services"
+      ],
+      "keywords": [
+        "documentation"
+      ],
+      "description": "Created an accessible prototype guide for a fictional service.",
+      "competencies": [
+        "Technical writing"
+      ],
+      "service_type": "Documentation"
+    }
+  ],
+  "barba_cv_version": "1.3"
+}
