@@ -14,7 +14,7 @@ def normalize(data):
     if 'parsing_errors' in out:
         legacy_errors = out['parsing_errors']
         meta = out.get('meta')
-        if meta is not None and not isinstance(meta, dict):
+        if 'meta' in out and not isinstance(meta, dict):
             report.append('conflict: root parsing_errors cannot move because meta is not an object; retained source')
         elif isinstance(meta, dict) and 'parsing_errors' in meta:
             report.append('conflict: root and meta.parsing_errors coexist; retained both')

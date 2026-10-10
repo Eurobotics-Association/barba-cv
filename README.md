@@ -8,7 +8,7 @@ Barba-CV is an **open-source specification** (not a parser service) that defines
 
 CV data is inherently heterogeneous—often incomplete, inconsistently structured, and partially normalized. The Barba-CV schema therefore enforces deterministic structure while preserving semantic flexibility, allowing real-world CV data to be represented without unrealistic constraints.
 
-The original 1.0 template and published 1.2 files are [preserved with provenance](history/README.md). The published 1.2 schema has unresolved references; use the versioned 1.3 schema for strict 1.3 validation.
+The original 1.0 template and published 1.2 files are [preserved with provenance](history/README.md). The published 1.2 schema has unresolved references; use the versioned 1.3 schema for strict 1.3 validation. A [conservative 1.0-shaped to 1.3 converter](docs/compatibility.md#conservative-10-shaped-to-13-conversion) and [fictional paired examples](examples/index.md) support migration and rendering tests.
 
 ## Documentation
 

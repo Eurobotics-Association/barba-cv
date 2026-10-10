@@ -10,6 +10,7 @@ permalink: /examples/
 
 - [Minimal section template](./barba-cv-1.3.template.json) — empty sections and arrays; placeholders are optional.
 - [Fictional populated example](./barba-cv-1.3.example.json) — name-only and enriched skill objects, structured projects, and an extension.
+- [Fictional 1.0-shaped source](./legacy/barba-cv-1.0-fictional.json) and [paired 1.3 conversion](./barba-cv-1.3.from-legacy.example.json) — same invented CV in both shapes, with a [mapping report](./legacy/barba-cv-1.0-to-1.3.report.json). See [compatibility and conversion]({{ '/docs/compatibility/' | relative_url }}).
 
 Validate these against the [1.3 schema]({{ '/schema/barba-cv-1.3.schema.json' | relative_url }}). The [getting-started guide]({{ '/docs/getting-started/' | relative_url }}) explains the contract.
 

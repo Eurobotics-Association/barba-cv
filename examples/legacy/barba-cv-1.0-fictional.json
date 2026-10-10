@@ -1,0 +1,151 @@
+{
+  "skills": {
+    "it_skills": [
+      "Rust",
+      "SQLite",
+      "Accessibility testing"
+    ],
+    "hard_skills": [
+      "Technical illustration",
+      "Workshop facilitation"
+    ],
+    "soft_skills": [
+      "Listening",
+      "Mentoring"
+    ]
+  },
+  "education": [
+    {
+      "logo": "https://example.org/assets/example-college.png",
+      "field": "Information design",
+      "degree": "Diploma",
+      "school": "Example College",
+      "website": "https://example.org/college",
+      "end_date": "2018",
+      "start_date": "2016",
+      "school_location": ""
+    }
+  ],
+  "interests": [
+    "Cycling",
+    "Community gardening"
+  ],
+  "languages": [
+    {
+      "level": "Conversational",
+      "language": "Italian",
+      "certificates": []
+    },
+    {
+      "level": "Beginner",
+      "language": "Esperanto",
+      "certificates": []
+    }
+  ],
+  "experiences": [
+    {
+      "logo": "https://example.org/assets/cooperative.png",
+      "tasks": [
+        "Documented public service interfaces.",
+        "Ran accessibility reviews."
+      ],
+      "website": "https://example.org/cooperative",
+      "end_date": "Present",
+      "location": {
+        "city": "Sample City",
+        "country": "Exampleland"
+      },
+      "role_title": "Product documentation specialist",
+      "start_date": "2020",
+      "achievements": [
+        "Published a plain-language service guide."
+      ],
+      "organization": "Example Cooperative"
+    },
+    {
+      "logo": "https://example.org/assets/studio.png",
+      "tasks": [
+        "Prepared user research summaries."
+      ],
+      "website": "https://example.org/studio",
+      "end_date": "2020",
+      "location": {
+        "city": "Sample City",
+        "country": "Exampleland"
+      },
+      "role_title": "Information designer",
+      "start_date": "2018",
+      "achievements": [
+        "Created reusable document templates."
+      ],
+      "organization": "Example Design Studio"
+    }
+  ],
+  "personal_info": {
+    "links": {
+      "facebook": "https://example.org/social/facebook",
+      "linkedin": "https://example.org/social/linkedin",
+      "X/twitter": "https://example.org/social/twitter",
+      "instagram": "https://example.org/social/instagram",
+      "other_socials": []
+    },
+    "address": {
+      "city": "Sample City",
+      "street": "1 Fictional Way",
+      "country": "Exampleland",
+      "street2": "",
+      "postal_code": "00000"
+    },
+    "contact": {
+      "email": "avery@example.org",
+      "phone": "+1 202-555-0104"
+    },
+    "last_name": "Example",
+    "first_name": "Avery",
+    "Middle_name": "",
+    "date_of_birth": "",
+    "driving_licenses": [
+      "C"
+    ]
+  },
+  "certifications": [
+    {
+      "name": "Example Accessibility Certificate",
+      "issuer": "Example Institute",
+      "expiry_date": "2027",
+      "credential_id": "DEMO-123",
+      "date_obtained": "2023",
+      "credential_url": "https://example.org/credentials/demo-123"
+    }
+  ],
+  "parsing_errors": [
+    "Example parser could not classify an optional logo reference."
+  ],
+  "profile_summary": "Information designer focused on clear public service documents and accessible interfaces.",
+  "projects_achievements_extracts": [
+    {
+      "id": "project-01",
+      "role": [
+        "Author"
+      ],
+      "title": "Public guide prototype",
+      "client": "Example Cooperative",
+      "period": {
+        "end": "2023",
+        "start": "2020"
+      },
+      "sectors": [
+        "Public services"
+      ],
+      "keywords": [
+        "documentation"
+      ],
+      "synonyms": [],
+      "description": "Created an accessible prototype guide for a fictional service.",
+      "competencies": [
+        "Technical writing"
+      ],
+      "service_type": "Documentation"
+    }
+  ]
+}

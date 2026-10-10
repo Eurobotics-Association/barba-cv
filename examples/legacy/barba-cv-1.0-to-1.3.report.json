@@ -1,0 +1,22 @@
+{
+  "source_profile": "operator-selected 1.0-shaped payload",
+  "mappings": [
+    "mapped root parsing_errors to meta.parsing_errors",
+    "mapped personal_info.Middle_name to middle_name",
+    "mapped personal_info.links.X/twitter to twitter",
+    "mapped skills.it_skills[0] string to name-only object",
+    "mapped skills.it_skills[1] string to name-only object",
+    "mapped skills.it_skills[2] string to name-only object",
+    "mapped skills.hard_skills[0] string to name-only object",
+    "mapped skills.hard_skills[1] string to name-only object",
+    "mapped skills.soft_skills[0] string to name-only object",
+    "mapped skills.soft_skills[1] string to name-only object",
+    "mapped projects_achievements_extracts to project_achievements"
+  ],
+  "omitted_empty": [
+    "education[0].school_location: empty legacy text",
+    "project_achievements[0].synonyms: empty legacy array"
+  ],
+  "blocked": [],
+  "status": "converted"
+}
